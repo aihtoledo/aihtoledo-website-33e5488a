@@ -12,18 +12,18 @@ interface ServiceCardProps {
 
 const ServiceCard = ({ title, description, features, icon, className }: ServiceCardProps) => {
   return (
-    <Card className={cn("h-full transition-all duration-200 hover:shadow-lg", className)}>
+    <Card className={cn("h-full transition-all duration-200 hover:shadow-lg border-t-4 border-t-toledo-gold", className)}>
       <CardHeader>
-        <div className="feature-icon">{icon}</div>
-        <CardTitle className="text-xl font-bold">{title}</CardTitle>
-        <CardDescription className="text-gray-600 mt-2">{description}</CardDescription>
+        <div className="flex items-center justify-center h-12 w-12 text-toledo-blue mb-4">{icon}</div>
+        <CardTitle className="text-xl font-bold text-toledo-blue">{title}</CardTitle>
+        <CardDescription className="text-toledo-grey mt-3">{description}</CardDescription>
       </CardHeader>
       <CardContent>
         <ul className="space-y-2">
           {features.map((feature, index) => (
             <li key={index} className="flex items-start">
-              <span className="text-eoh-blue-600 mr-2 font-bold">✅</span>
-              <span>{feature}</span>
+              <span className="text-toledo-gold mr-2 font-bold">✓</span>
+              <span className="text-toledo-grey">{feature}</span>
             </li>
           ))}
         </ul>

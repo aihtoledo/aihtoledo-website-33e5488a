@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import Navbar from "@/components/Navbar";
@@ -14,24 +15,24 @@ const Index = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-br from-eoh-blue-50 to-white">
+      <section className="pt-32 pb-20 md:pt-40 md:pb-28 bg-white">
         <div className="section-container">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-toledo-blue">
               Expert Office Hours
             </h1>
-            <p className="text-xl md:text-2xl font-medium mb-6 text-eoh-blue-800">
+            <p className="text-xl md:text-2xl font-medium mb-6 text-toledo-gold">
               Professional support. Strategic clarity. AI-enhanced results.
             </p>
-            <p className="text-lg text-gray-700 mb-8">
+            <p className="text-lg text-toledo-grey mb-12">
               Get direct access to experienced experts ready to help you solve problems, build smarter strategies, develop new skills, and present with impact. Whether you're an individual looking to grow or a team facing complex challenges, Office Hours give you the focused support you need—when you need it.
             </p>
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-              <Button size="lg" className="bg-eoh-blue-600 hover:bg-eoh-blue-700 text-lg px-8 py-6">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
+              <Button size="lg" className="btn-primary text-lg px-8 py-6 rounded-none">
                 Book a Session
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
-              <div className="text-gray-700 text-lg font-medium">
+              <div className="text-toledo-grey text-lg font-medium mt-4 sm:mt-0">
                 👉 Book a session. Make progress. Get it done.
               </div>
             </div>
@@ -40,17 +41,17 @@ const Index = () => {
       </section>
 
       {/* What Are Expert Office Hours Section */}
-      <section id="what-are" className="py-16 bg-white">
+      <section id="what-are" className="py-20 bg-toledo-light">
         <div className="section-container">
           <AnimateOnScroll>
             <div className="max-w-3xl mx-auto text-center mb-12">
-              <div className="inline-block rounded-full bg-eoh-blue-100 px-4 py-1.5 text-eoh-blue-800 font-medium mb-4">
+              <div className="inline-block bg-toledo-gold px-4 py-1.5 text-toledo-blue font-medium mb-4">
                 👋 What Are Expert Office Hours?
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="section-heading">
                 Focused, actionable sessions designed to help you solve real problems
               </h2>
-              <p className="text-lg text-gray-700">
+              <p className="text-lg text-toledo-grey">
                 Expert Office Hours are focused, actionable sessions designed to help leaders, teams, and individuals solve real problems and unlock real progress. No fluff. No endless meetings. Just meaningful collaboration—with tools, frameworks, and AI enhancements to help you move forward faster.
               </p>
             </div>
@@ -59,20 +60,20 @@ const Index = () => {
       </section>
 
       {/* What We Help With Section */}
-      <section id="what-we-help" className="py-16 bg-gray-50">
+      <section id="what-we-help" className="py-20 bg-white">
         <div className="section-container">
           <AnimateOnScroll>
-            <div className="text-center mb-12">
-              <div className="inline-block rounded-full bg-eoh-blue-100 px-4 py-1.5 text-eoh-blue-800 font-medium mb-4">
+            <div className="text-center mb-16">
+              <div className="inline-block bg-toledo-gold px-4 py-1.5 text-toledo-blue font-medium mb-4">
                 🧠 What We Help With
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="section-heading">
                 Expert guidance when you need it most
               </h2>
             </div>
           </AnimateOnScroll>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <AnimateOnScroll delay={100}>
               <ServiceCard
                 title="Fractional Chief Learning Officer Support"
@@ -103,7 +104,7 @@ const Index = () => {
 
             <AnimateOnScroll delay={300}>
               <ServiceCard
-                title="Strategic Problem-Solving (No Buzzwords Here)"
+                title="Strategic Problem-Solving"
                 description="Not sure how to tackle a challenge? We'll work together to map it, frame it, and solve it. Call it innovation, call it systems thinking—we call it making it happen."
                 features={[
                   "Navigate uncertainty with clarity",
@@ -131,17 +132,17 @@ const Index = () => {
       </section>
 
       {/* AI-Enhanced Section */}
-      <section className="py-16 bg-eoh-blue-900 text-white">
+      <section className="py-20 bg-toledo-blue text-white">
         <div className="section-container">
           <AnimateOnScroll>
-            <div className="text-center mb-12">
-              <div className="inline-block rounded-full bg-eoh-blue-800 px-4 py-1.5 text-white font-medium mb-4">
+            <div className="text-center mb-16">
+              <div className="inline-block bg-toledo-gold px-4 py-1.5 text-toledo-blue font-medium mb-4">
                 🤖 AI-Enhanced Everything
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
                 We don't just bring expertise—we bring tools
               </h2>
-              <p className="text-lg text-eoh-blue-100 max-w-3xl mx-auto">
+              <p className="text-lg text-white/80 max-w-3xl mx-auto">
                 Every session is supported by cutting-edge AI to help you:
               </p>
             </div>
@@ -153,6 +154,7 @@ const Index = () => {
                 title="Draft smarter"
                 description="AI-assisted content creation for documents, presentations, and communications"
                 icon={<BookOpen className="h-6 w-6" />}
+                className="bg-white"
               />
             </AnimateOnScroll>
 
@@ -161,6 +163,7 @@ const Index = () => {
                 title="Visualize faster"
                 description="Generate diagrams, charts, and visual aids to illustrate complex concepts"
                 icon={<Presentation className="h-6 w-6" />}
+                className="bg-white"
               />
             </AnimateOnScroll>
 
@@ -169,6 +172,7 @@ const Index = () => {
                 title="Present clearer"
                 description="Rehearse presentations with AI feedback on delivery, content, and engagement"
                 icon={<Users className="h-6 w-6" />}
+                className="bg-white"
               />
             </AnimateOnScroll>
 
@@ -177,6 +181,7 @@ const Index = () => {
                 title="Learn quicker"
                 description="Personalized learning recommendations and custom knowledge bases"
                 icon={<Brain className="h-6 w-6" />}
+                className="bg-white"
               />
             </AnimateOnScroll>
           </div>
@@ -184,17 +189,17 @@ const Index = () => {
       </section>
 
       {/* Who It's For Section */}
-      <section id="who-its-for" className="py-16 bg-white">
+      <section id="who-its-for" className="py-20 bg-white">
         <div className="section-container">
           <AnimateOnScroll>
-            <div className="text-center mb-12">
-              <div className="inline-block rounded-full bg-eoh-blue-100 px-4 py-1.5 text-eoh-blue-800 font-medium mb-4">
+            <div className="text-center mb-16">
+              <div className="inline-block bg-toledo-gold px-4 py-1.5 text-toledo-blue font-medium mb-4">
                 🚀 Who It's For
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="section-heading">
                 Supporting diverse professionals across industries
               </h2>
-              <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+              <p className="text-lg text-toledo-grey max-w-3xl mx-auto mb-12">
                 Anyone who's ready to stop spinning wheels and start making things happen.
               </p>
             </div>
@@ -204,28 +209,28 @@ const Index = () => {
             <AnimateOnScroll delay={100}>
               <AudienceSegment 
                 title="Founders and Executives"
-                icon={<Users className="h-6 w-6" />}
+                icon={<Users className="h-8 w-8" />}
               />
             </AnimateOnScroll>
 
             <AnimateOnScroll delay={200}>
               <AudienceSegment 
                 title="HR and L&D Leaders"
-                icon={<Users className="h-6 w-6" />}
+                icon={<Users className="h-8 w-8" />}
               />
             </AnimateOnScroll>
 
             <AnimateOnScroll delay={300}>
               <AudienceSegment 
-                title="Team Leads and Individual Contributors"
-                icon={<Users className="h-6 w-6" />}
+                title="Team Leads and Contributors"
+                icon={<Users className="h-8 w-8" />}
               />
             </AnimateOnScroll>
 
             <AnimateOnScroll delay={400}>
               <AudienceSegment 
-                title="Educators, Consultants, and Nonprofit Leaders"
-                icon={<Users className="h-6 w-6" />}
+                title="Educators and Consultants"
+                icon={<Users className="h-8 w-8" />}
               />
             </AnimateOnScroll>
           </div>
@@ -233,20 +238,20 @@ const Index = () => {
       </section>
 
       {/* How It Works Section */}
-      <section id="how-it-works" className="py-16 bg-gray-50">
+      <section id="how-it-works" className="py-20 bg-toledo-light">
         <div className="section-container">
           <AnimateOnScroll>
-            <div className="text-center mb-12">
-              <div className="inline-block rounded-full bg-eoh-blue-100 px-4 py-1.5 text-eoh-blue-800 font-medium mb-4">
+            <div className="text-center mb-16">
+              <div className="inline-block bg-toledo-gold px-4 py-1.5 text-toledo-blue font-medium mb-4">
                 💬 How It Works
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="section-heading">
                 A simple process for powerful results
               </h2>
             </div>
           </AnimateOnScroll>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
             <AnimateOnScroll delay={100}>
               <ProcessStep
                 number={1}
@@ -283,17 +288,17 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-eoh-blue-600 text-white">
+      <section className="py-20 bg-toledo-gold">
         <div className="section-container">
           <AnimateOnScroll>
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-toledo-blue">
                 🔥 Let's Make It Happen
               </h2>
-              <p className="text-xl mb-8">
+              <p className="text-xl mb-8 text-toledo-blue">
                 This isn't a webinar. It's not a course. It's not another "coffee chat." It's expert time, dedicated to your challenge—designed to move you forward.
               </p>
-              <Button size="lg" variant="outline" className="bg-white text-eoh-blue-800 hover:bg-eoh-blue-50 border-white text-lg px-8 py-6">
+              <Button variant="default" size="lg" className="btn-primary text-lg px-10 py-6 rounded-none">
                 Book Your Session Now
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
@@ -303,21 +308,21 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-gray-300 py-12">
+      <footer className="bg-toledo-blue text-white py-12">
         <div className="section-container">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
               <h3 className="text-2xl font-bold text-white">Expert Office Hours</h3>
-              <p className="mt-2">Professional support when you need it most.</p>
+              <p className="mt-2 text-white/80">Professional support when you need it most.</p>
             </div>
-            <div className="flex space-x-6">
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-white transition-colors">Contact</a>
+            <div className="flex space-x-10">
+              <a href="#" className="hover:text-toledo-gold transition-colors">Privacy Policy</a>
+              <a href="#" className="hover:text-toledo-gold transition-colors">Terms of Service</a>
+              <a href="#" className="hover:text-toledo-gold transition-colors">Contact</a>
             </div>
           </div>
-          <Separator className="my-8 bg-gray-700" />
-          <div className="text-center text-sm">
+          <Separator className="my-8 bg-white/20" />
+          <div className="text-center text-sm text-white/80">
             <p>© {new Date().getFullYear()} Expert Office Hours. All rights reserved.</p>
           </div>
         </div>
