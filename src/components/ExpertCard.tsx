@@ -1,0 +1,77 @@
+
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import { ArrowRight } from "lucide-react";
+
+interface ExpertCardProps {
+  name: string;
+  pronouns: string;
+  image: string;
+  bio: string;
+  bookingLink: string;
+  linkedInLink?: string;
+  personalSiteLink?: string;
+  className?: string;
+}
+
+const ExpertCard = ({ 
+  name, 
+  pronouns, 
+  image, 
+  bio, 
+  bookingLink, 
+  linkedInLink, 
+  personalSiteLink, 
+  className 
+}: ExpertCardProps) => {
+  return (
+    <div className={cn("flex flex-col bg-white shadow-lg p-6 border-t-4 border-toledo-gold", className)}>
+      <div className="flex flex-col md:flex-row gap-6 items-center md:items-start mb-6">
+        <div className="w-32 h-32 rounded-full overflow-hidden shrink-0">
+          <img 
+            src={image} 
+            alt={`Photo of ${name}`} 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div>
+          <h3 className="text-xl font-bold text-toledo-blue mb-1">{name} <span className="text-sm font-normal text-toledo-grey">({pronouns})</span></h3>
+          <div className="flex flex-wrap gap-3 mb-3">
+            {linkedInLink && (
+              <a 
+                href={linkedInLink} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-sm text-toledo-blue hover:text-toledo-gold transition-colors"
+              >
+                LinkedIn
+              </a>
+            )}
+            {personalSiteLink && (
+              <a 
+                href={personalSiteLink} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-sm text-toledo-blue hover:text-toledo-gold transition-colors"
+              >
+                Website
+              </a>
+            )}
+          </div>
+          <p className="text-toledo-grey text-sm line-clamp-6 md:line-clamp-none">{bio}</p>
+        </div>
+      </div>
+      <div className="mt-auto pt-4 border-t border-gray-100">
+        <Button 
+          className="btn-secondary w-full"
+          onClick={() => window.open(bookingLink, '_blank')}
+        >
+          Book with {name.split(' ')[0]}
+          <ArrowRight className="w-4 h-4 ml-2" />
+        </Button>
+      </div>
+    </div>
+  );
+};
+
+export default ExpertCard;

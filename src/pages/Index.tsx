@@ -7,7 +7,8 @@ import ProcessStep from "@/components/ProcessStep";
 import AiFeature from "@/components/AiFeature";
 import AudienceSegment from "@/components/AudienceSegment";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
-import { ArrowRight, BookOpen, Presentation, Brain, Users, Calendar } from "lucide-react";
+import ExpertCard from "@/components/ExpertCard";
+import { ArrowRight, BookOpen, Presentation, Brain, Users, Calendar, Briefcase } from "lucide-react";
 
 const Index = () => {
   return (
@@ -22,16 +23,18 @@ const Index = () => {
               Expert Office Hours
             </h1>
             <p className="text-xl md:text-2xl font-medium mb-6 text-toledo-gold">
-              Professional support. Strategic clarity. AI-enhanced results.
+              Professional support. Strategic clarity. Results that matter.
             </p>
             <p className="text-lg text-toledo-grey mb-12">
               Get direct access to experienced experts ready to help you solve problems, build smarter strategies, develop new skills, and present with impact. Whether you're an individual looking to grow or a team facing complex challenges, Office Hours give you the focused support you need—when you need it.
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
-              <Button size="lg" className="btn-primary text-lg px-8 py-6 rounded-none">
-                Book a Session
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
+              <a href="#meet-the-experts">
+                <Button size="lg" className="btn-primary text-lg px-8 py-6 rounded-none">
+                  Book a Session
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+              </a>
               <div className="text-toledo-grey text-lg font-medium mt-4 sm:mt-0">
                 👉 Book a session. Make progress. Get it done.
               </div>
@@ -40,8 +43,62 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Meet the Experts Section */}
+      <section id="meet-the-experts" className="py-20 bg-toledo-light">
+        <div className="section-container">
+          <AnimateOnScroll>
+            <div className="text-center mb-16">
+              <div className="inline-block bg-toledo-gold px-4 py-1.5 text-toledo-blue font-medium mb-4">
+                👋 Meet The Experts
+              </div>
+              <h2 className="section-heading">
+                Book a session with our experienced professionals
+              </h2>
+              <p className="text-lg text-toledo-grey max-w-3xl mx-auto mb-12">
+                Our experts bring years of experience and specialized knowledge to help you tackle challenges and achieve your goals.
+              </p>
+            </div>
+          </AnimateOnScroll>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <AnimateOnScroll delay={100}>
+              <ExpertCard 
+                name="Justin Beaudry" 
+                pronouns="he/him"
+                image="/lovable-uploads/612cdb91-bddf-4108-8ab1-bac61f0263e8.png"
+                bio="I am a seasoned software and systems engineer. As the Director of Engineering at Actual Reality Technologies, I lead teams across the stack—from front-end interfaces to data infrastructure—delivering solutions for startups and larger enterprises alike. My career has included roles at companies like Vida Health, United Airlines, and JetInsight, where I've championed collaborative, people-first engineering cultures."
+                bookingLink="https://cal.com/justinbeaudry"
+                linkedInLink="https://www.linkedin.com/in/justinbeaudry/"
+              />
+            </AnimateOnScroll>
+
+            <AnimateOnScroll delay={200}>
+              <ExpertCard 
+                name="Keith Instone" 
+                pronouns="he/him"
+                image="/lovable-uploads/0786c27d-52ff-46c3-a4b3-4fc9d9903b54.png"
+                bio="I am a user experience consultant, working with business and IT teams to define, design and deliver great experiences for people using technology. As part of Tech Toledo (from 2011-2019), I helped foster the tech ecosystem in the Toledo region. With things like Toledo Codes, time for the next iteration."
+                bookingLink="#"
+                personalSiteLink="https://dexterityux.com/"
+              />
+            </AnimateOnScroll>
+
+            <AnimateOnScroll delay={300}>
+              <ExpertCard 
+                name="Michael Vanderpool" 
+                pronouns="he/him"
+                image="/lovable-uploads/84732a45-fac0-411c-822a-3aaf7ccb11e9.png"
+                bio="Michael Vanderpool is a lifelong learner and educator with a passion for helping others grow. With a background in entrepreneurship and creative media, he has applied his skills in video production, writing, and web design across various industries. After earning his bachelor's from Oakland University, he completed a Master of Education in Learning Design and Technology at Bowling Green State University, where he also taught visual communication."
+                bookingLink="#"
+                linkedInLink="https://www.linkedin.com/in/vanderpoolmichael/"
+              />
+            </AnimateOnScroll>
+          </div>
+        </div>
+      </section>
+
       {/* What Are Expert Office Hours Section */}
-      <section id="what-are" className="py-20 bg-toledo-light">
+      <section id="what-are" className="py-20 bg-white">
         <div className="section-container">
           <AnimateOnScroll>
             <div className="max-w-3xl mx-auto text-center mb-12">
@@ -52,7 +109,7 @@ const Index = () => {
                 Focused, actionable sessions designed to help you solve real problems
               </h2>
               <p className="text-lg text-toledo-grey">
-                Expert Office Hours are focused, actionable sessions designed to help leaders, teams, and individuals solve real problems and unlock real progress. No fluff. No endless meetings. Just meaningful collaboration—with tools, frameworks, and AI enhancements to help you move forward faster.
+                Expert Office Hours are focused, actionable sessions designed to help leaders, teams, and individuals solve real problems and unlock real progress. No fluff. No endless meetings. Just meaningful collaboration—with tools, frameworks, and guidance to help you move forward faster.
               </p>
             </div>
           </AnimateOnScroll>
@@ -60,7 +117,7 @@ const Index = () => {
       </section>
 
       {/* What We Help With Section */}
-      <section id="what-we-help" className="py-20 bg-white">
+      <section id="what-we-help" className="py-20 bg-toledo-light">
         <div className="section-container">
           <AnimateOnScroll>
             <div className="text-center mb-16">
@@ -109,7 +166,7 @@ const Index = () => {
                 features={[
                   "Navigate uncertainty with clarity",
                   "Break complex problems into actionable next steps",
-                  "Use AI to prototype, model, or analyze your options"
+                  "Use proven methodologies to prototype, model, or analyze your options"
                 ]}
                 icon={<Brain className="h-6 w-6" />}
               />
@@ -122,66 +179,9 @@ const Index = () => {
                 features={[
                   "Structure your message for maximum impact",
                   "Design visuals that don't just look good—they drive action",
-                  "Rehearse with AI tools that provide real-time feedback"
+                  "Rehearse with expert feedback to perfect your delivery"
                 ]}
                 icon={<Presentation className="h-6 w-6" />}
-              />
-            </AnimateOnScroll>
-          </div>
-        </div>
-      </section>
-
-      {/* AI-Enhanced Section */}
-      <section className="py-20 bg-toledo-blue text-white">
-        <div className="section-container">
-          <AnimateOnScroll>
-            <div className="text-center mb-16">
-              <div className="inline-block bg-toledo-gold px-4 py-1.5 text-toledo-blue font-medium mb-4">
-                🤖 AI-Enhanced Everything
-              </div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-                We don't just bring expertise—we bring tools
-              </h2>
-              <p className="text-lg text-white/80 max-w-3xl mx-auto">
-                Every session is supported by cutting-edge AI to help you:
-              </p>
-            </div>
-          </AnimateOnScroll>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <AnimateOnScroll delay={100}>
-              <AiFeature
-                title="Draft smarter"
-                description="AI-assisted content creation for documents, presentations, and communications"
-                icon={<BookOpen className="h-6 w-6" />}
-                className="bg-white"
-              />
-            </AnimateOnScroll>
-
-            <AnimateOnScroll delay={200}>
-              <AiFeature
-                title="Visualize faster"
-                description="Generate diagrams, charts, and visual aids to illustrate complex concepts"
-                icon={<Presentation className="h-6 w-6" />}
-                className="bg-white"
-              />
-            </AnimateOnScroll>
-
-            <AnimateOnScroll delay={300}>
-              <AiFeature
-                title="Present clearer"
-                description="Rehearse presentations with AI feedback on delivery, content, and engagement"
-                icon={<Users className="h-6 w-6" />}
-                className="bg-white"
-              />
-            </AnimateOnScroll>
-
-            <AnimateOnScroll delay={400}>
-              <AiFeature
-                title="Learn quicker"
-                description="Personalized learning recommendations and custom knowledge bases"
-                icon={<Brain className="h-6 w-6" />}
-                className="bg-white"
               />
             </AnimateOnScroll>
           </div>
@@ -209,7 +209,7 @@ const Index = () => {
             <AnimateOnScroll delay={100}>
               <AudienceSegment 
                 title="Founders and Executives"
-                icon={<Users className="h-8 w-8" />}
+                icon={<Briefcase className="h-8 w-8" />}
               />
             </AnimateOnScroll>
 
@@ -230,7 +230,7 @@ const Index = () => {
             <AnimateOnScroll delay={400}>
               <AudienceSegment 
                 title="Educators and Consultants"
-                icon={<Users className="h-8 w-8" />}
+                icon={<BookOpen className="h-8 w-8" />}
               />
             </AnimateOnScroll>
           </div>
@@ -298,10 +298,12 @@ const Index = () => {
               <p className="text-xl mb-8 text-toledo-blue">
                 This isn't a webinar. It's not a course. It's not another "coffee chat." It's expert time, dedicated to your challenge—designed to move you forward.
               </p>
-              <Button variant="default" size="lg" className="btn-primary text-lg px-10 py-6 rounded-none">
-                Book Your Session Now
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
+              <a href="#meet-the-experts">
+                <Button variant="default" size="lg" className="btn-primary text-lg px-10 py-6 rounded-none">
+                  Book Your Session Now
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+              </a>
             </div>
           </AnimateOnScroll>
         </div>
