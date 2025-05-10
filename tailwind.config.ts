@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,7 +62,12 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors for Expert Office Hours
+				// Toledo, Ohio colors
+				"toledo-blue": "#003594", // Toledo Blue
+				"toledo-gold": "#FFB81C", // Toledo Gold
+				"toledo-grey": "#54565A", // Complementary grey
+				"toledo-light": "#F5F5F5", // Light background color
+				// Keep the original eoh-blue for backward compatibility
 				"eoh-blue": {
 					50: "#eff6ff",
 					100: "#dbeafe",

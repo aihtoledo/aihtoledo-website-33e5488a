@@ -14,11 +14,11 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 221.2 83.2% 53.3%;
+    --primary: 215 100% 34%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 227.1 47.2% 21.4%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 43 100% 50%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -97,7 +97,7 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-r from-eoh-blue-700 to-eoh-blue-500 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-toledo-blue to-toledo-gold bg-clip-text text-transparent;
   }
 }
 
@@ -106,7 +106,7 @@
 }
 
 .feature-icon {
-  @apply flex h-12 w-12 items-center justify-center rounded-md bg-eoh-blue-600 text-white mb-4;
+  @apply flex h-12 w-12 items-center justify-center rounded-md bg-toledo-blue text-white mb-4;
 }
 
 .animate-on-scroll {
@@ -119,3 +119,4 @@
   opacity: 1;
   transform: translateY(0);
 }
+
