@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import Navbar from "@/components/Navbar";
@@ -7,7 +6,7 @@ import ProcessStep from "@/components/ProcessStep";
 import AiFeature from "@/components/AiFeature";
 import AudienceSegment from "@/components/AudienceSegment";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
-import { ArrowRight, BookOpen, PresentationChart, Brain, Users, Calendar } from "lucide-react";
+import { ArrowRight, BookOpen, Presentation, Brain, Users, Calendar } from "lucide-react";
 
 const Index = () => {
   return (
@@ -124,7 +123,7 @@ const Index = () => {
                   "Design visuals that don't just look good—they drive action",
                   "Rehearse with AI tools that provide real-time feedback"
                 ]}
-                icon={<PresentationChart className="h-6 w-6" />}
+                icon={<Presentation className="h-6 w-6" />}
               />
             </AnimateOnScroll>
           </div>
@@ -161,7 +160,7 @@ const Index = () => {
               <AiFeature
                 title="Visualize faster"
                 description="Generate diagrams, charts, and visual aids to illustrate complex concepts"
-                icon={<PresentationChart className="h-6 w-6" />}
+                icon={<Presentation className="h-6 w-6" />}
               />
             </AnimateOnScroll>
 
