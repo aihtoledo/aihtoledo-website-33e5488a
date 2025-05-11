@@ -64,10 +64,10 @@ export default {
 				},
 				// Toledo, Ohio colors
 				"toledo-blue": "#003594", // Toledo Blue
-				"toledo-gold": "#FFB81C", // Toledo Gold
+				"toledo-gold": "#FFB81C", // Toledo Gold (keeping for backward compatibility)
+				"toledo-orange": "#EC8305", // Toledo Orange
 				"toledo-grey": "#54565A", // Complementary grey
 				"toledo-light": "#F5F5F5", // Light background color
-				"toledo-orange": "#EC8305", // Toledo Orange
 				// Keep the original eoh-blue for backward compatibility
 				"eoh-blue": {
 					50: "#eff6ff",

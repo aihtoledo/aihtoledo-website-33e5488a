@@ -25,7 +25,7 @@ const ExpertCard = ({
   className 
 }: ExpertCardProps) => {
   return (
-    <div className={cn("flex flex-col bg-white shadow-lg p-6 border-t-4 border-toledo-gold", className)}>
+    <div className={cn("flex flex-col bg-white shadow-lg p-6 border-t-4 border-toledo-orange", className)}>
       <div className="flex flex-col md:flex-row gap-6 items-center md:items-start mb-6">
         <div className="w-32 h-32 rounded-full overflow-hidden shrink-0">
           <img 
@@ -42,7 +42,7 @@ const ExpertCard = ({
                 href={linkedInLink} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-sm text-toledo-blue hover:text-toledo-gold transition-colors"
+                className="text-sm text-toledo-blue hover:text-toledo-orange transition-colors"
               >
                 LinkedIn
               </a>
@@ -52,7 +52,7 @@ const ExpertCard = ({
                 href={personalSiteLink} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-sm text-toledo-blue hover:text-toledo-gold transition-colors"
+                className="text-sm text-toledo-blue hover:text-toledo-orange transition-colors"
               >
                 Website
               </a>

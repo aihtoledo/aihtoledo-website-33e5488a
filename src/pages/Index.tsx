@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import Navbar from "@/components/Navbar";
@@ -53,7 +52,7 @@ const Index = () => {
         <div className="section-container">
           <AnimateOnScroll>
             <div className="text-center mb-16">
-              <div className="inline-block bg-toledo-gold px-4 py-1.5 text-toledo-blue font-medium mb-4">
+              <div className="inline-block bg-toledo-orange px-4 py-1.5 text-toledo-blue font-medium mb-4">
                 👋 Meet The Experts
               </div>
               <h2 className="section-heading">
@@ -107,7 +106,7 @@ const Index = () => {
         <div className="section-container">
           <AnimateOnScroll>
             <div className="max-w-3xl mx-auto text-center mb-12">
-              <div className="inline-block bg-toledo-gold px-4 py-1.5 text-toledo-blue font-medium mb-4">
+              <div className="inline-block bg-toledo-orange px-4 py-1.5 text-toledo-blue font-medium mb-4">
                 👋 What Are Expert Office Hours?
               </div>
               <h2 className="section-heading">
@@ -126,7 +125,7 @@ const Index = () => {
         <div className="section-container">
           <AnimateOnScroll>
             <div className="text-center mb-16">
-              <div className="inline-block bg-toledo-gold px-4 py-1.5 text-toledo-blue font-medium mb-4">
+              <div className="inline-block bg-toledo-orange px-4 py-1.5 text-toledo-blue font-medium mb-4">
                 🧠 What We Help With
               </div>
               <h2 className="section-heading">
@@ -198,7 +197,7 @@ const Index = () => {
         <div className="section-container">
           <AnimateOnScroll>
             <div className="text-center mb-16">
-              <div className="inline-block bg-toledo-gold px-4 py-1.5 text-toledo-blue font-medium mb-4">
+              <div className="inline-block bg-toledo-orange px-4 py-1.5 text-toledo-blue font-medium mb-4">
                 🚀 Who It's For
               </div>
               <h2 className="section-heading">
@@ -247,7 +246,7 @@ const Index = () => {
         <div className="section-container">
           <AnimateOnScroll>
             <div className="text-center mb-16">
-              <div className="inline-block bg-toledo-gold px-4 py-1.5 text-toledo-blue font-medium mb-4">
+              <div className="inline-block bg-toledo-orange px-4 py-1.5 text-toledo-blue font-medium mb-4">
                 💬 How It Works
               </div>
               <h2 className="section-heading">
@@ -293,7 +292,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-toledo-gold">
+      <section className="py-20 bg-toledo-orange">
         <div className="section-container">
           <AnimateOnScroll>
             <div className="max-w-3xl mx-auto text-center">

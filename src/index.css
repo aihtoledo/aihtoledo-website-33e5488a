@@ -101,7 +101,7 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-r from-toledo-blue to-toledo-gold bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-toledo-blue to-toledo-orange bg-clip-text text-transparent;
   }
 }
 
@@ -129,7 +129,7 @@
 }
 
 .btn-secondary {
-  @apply bg-toledo-gold hover:bg-toledo-gold/90 text-toledo-blue px-6 py-3 rounded-none transition-all;
+  @apply bg-toledo-orange hover:bg-toledo-orange/90 text-toledo-blue px-6 py-3 rounded-none transition-all;
 }
 
 .btn-outline {
@@ -143,3 +143,4 @@
 .section-subheading {
   @apply text-xl md:text-2xl font-medium mb-6 text-toledo-grey;
 }
+
