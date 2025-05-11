@@ -49,7 +49,9 @@ const ExpertCard = ({
                 rel="noopener noreferrer"
                 className="text-sm text-toledo-blue hover:text-toledo-orange transition-colors flex items-center gap-1"
               >
-                <Linkedin className="w-4 h-4" />
+                <span className="flex items-center justify-center bg-toledo-blue rounded-full p-1">
+                  <Linkedin className="w-3 h-3 text-white" />
+                </span>
                 LinkedIn
               </a>
             )}
@@ -60,7 +62,9 @@ const ExpertCard = ({
                 rel="noopener noreferrer"
                 className="text-sm text-toledo-blue hover:text-toledo-orange transition-colors flex items-center gap-1"
               >
-                <ExternalLink className="w-4 h-4" />
+                <span className="flex items-center justify-center bg-toledo-blue rounded-full p-1">
+                  <ExternalLink className="w-3 h-3 text-white" />
+                </span>
                 Website
               </a>
             )}
