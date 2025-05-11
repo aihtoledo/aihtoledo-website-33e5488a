@@ -8,16 +8,19 @@ import AiFeature from "@/components/AiFeature";
 import AudienceSegment from "@/components/AudienceSegment";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import ExpertCard from "@/components/ExpertCard";
+import { useIsMobile } from "@/hooks/use-mobile";
 import { ArrowRight, BookOpen, Presentation, Brain, Users, Calendar, Briefcase } from "lucide-react";
 
 const Index = () => {
+  const isMobile = useIsMobile();
+  
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
       
       {/* Hero Section */}
       <section className="min-h-screen flex items-end justify-center bg-cover bg-center" style={{ backgroundImage: "url('/lovable-uploads/aihtoledo-hero.jpg')" }}>
-        <div className="w-full max-w-[50%] bg-white bg-opacity-95 p-6 rounded-lg shadow-lg mb-6">
+        <div className={`w-full ${isMobile ? 'max-w-full' : 'max-w-[50%]'} bg-white bg-opacity-95 p-6 rounded-lg shadow-lg ${isMobile ? 'mb-0' : 'mb-6'}`}>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-toledo-blue mb-6">
             Expert Office Hours
           </h1>
@@ -44,7 +47,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
 
       {/* Meet the Experts Section */}
       <section id="meet-the-experts" className="py-20 bg-toledo-light">
