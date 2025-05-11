@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -82,9 +81,7 @@
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
-}
-
-@layer base {
+  
   * {
     @apply border-border;
   }
@@ -97,11 +94,19 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-bold text-toledo-blue;
   }
+
+  p {
+    @apply text-justify hyphens-auto;
+  }
 }
 
 @layer utilities {
   .text-gradient {
     @apply bg-gradient-to-r from-toledo-blue to-toledo-orange bg-clip-text text-transparent;
+  }
+  
+  .no-orphans {
+    text-wrap: balance;
   }
 }
 
@@ -137,10 +142,9 @@
 }
 
 .section-heading {
-  @apply text-3xl md:text-4xl font-bold mb-8 text-toledo-blue;
+  @apply text-3xl md:text-4xl font-bold mb-8 text-toledo-blue no-orphans;
 }
 
 .section-subheading {
-  @apply text-xl md:text-2xl font-medium mb-6 text-toledo-grey;
+  @apply text-xl md:text-2xl font-medium mb-6 text-toledo-grey no-orphans;
 }
-
