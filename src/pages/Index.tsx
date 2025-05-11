@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import Navbar from "@/components/Navbar";
@@ -24,8 +25,11 @@ const Index = () => {
             Expert Office Hours
           </h1>
 
+          <p className="text-xl md:text-2xl font-medium text-center text-toledo-orange mb-2">
+            Professional support. Strategic clarity.
+          </p>
           <p className="text-xl md:text-2xl font-medium text-center text-toledo-orange mb-6">
-            Professional support. Strategic clarity. Results that matter.
+            Results that matter.
           </p>
 
           <p className="text-lg text-justify text-toledo-grey mb-12">
