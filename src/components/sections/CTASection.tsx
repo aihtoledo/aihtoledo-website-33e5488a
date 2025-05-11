@@ -17,7 +17,7 @@ const CTASection = () => {
             </p>
             <a href="#meet-the-experts">
               <Button variant="default" size="lg" className="btn-primary text-lg px-10 py-6 rounded-none">
-                Book Your<br />Session Now
+                Book Your Session Now
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </a>

@@ -49,7 +49,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <a href="#meet-the-experts">
               <Button className="ml-8 bg-toledo-blue hover:bg-toledo-blue/90 text-white">
-                Book a<br />Session
+                Book a Session
               </Button>
             </a>
           </div>
@@ -102,7 +102,7 @@ const Navbar = () => {
               <div>
                 <a href="#meet-the-experts" onClick={() => setIsMenuOpen(false)}>
                   <Button className="w-full bg-toledo-blue hover:bg-toledo-blue/90 text-white">
-                    Book a<br />Session
+                    Book a Session
                   </Button>
                 </a>
               </div>

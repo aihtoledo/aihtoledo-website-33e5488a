@@ -31,7 +31,7 @@ const HeroSection = () => {
           </div>
           <a href="#meet-the-experts">
             <Button size="lg" className="btn-primary text-lg px-8 py-6 rounded-none">
-              Book a<br />Session
+              Book a Session
             </Button>
           </a>
         </div>
