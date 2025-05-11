@@ -63,7 +63,7 @@ const ExpertCard = ({
       </div>
       <div className="mt-auto pt-4 border-t border-gray-100">
         <Button 
-          className="btn-secondary w-full"
+          className="bg-toledo-orange hover:bg-toledo-orange/90 text-white w-full"
           onClick={() => window.open(bookingLink, '_blank')}
         >
           Book with {name.split(' ')[0]}
