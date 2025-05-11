@@ -16,30 +16,36 @@ const Index = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center bg-white bg-cover bg-center pt-32 pb-20 md:pt-40 md:pb-28" style={{ backgroundImage: "url('/lovable-uploads/aihtoledo-hero.jpg')" }}>      <div className="w-full max-w-[50%] bg-white rounded-lg p-6 shadow-lg opacity-95 mx-auto">
-      <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-toledo-blue">
-              Expert Office Hours
-            </h1>
-            <p className="text-center text-xl md:text-2xl font-medium mb-6 text-toledo-orange">
-              Professional support. Strategic clarity. Results that matter.
-            </p>
-            <p className="text-justify text-lg text-toledo-grey mb-12">
-              Get direct access to experienced experts ready to help you solve problems, build smarter strategies, develop new skills, and present with impact. Whether you're an individual looking to grow or a team facing complex challenges, Office Hours give you the focused support you need—when you need it.
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
-            <div className="text-toledo-grey text-lg font-medium mt-4 sm:mt-0">
-                Book a session. Make a plan. Make it happen! 👉 
-              </div>
-              <a href="#meet-the-experts">
-                <Button size="lg" className="btn-primary text-lg px-8 py-6 rounded-none">
-                  Book a Session
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </Button>
-              </a>
+      <section className="min-h-screen flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('/lovable-uploads/aihtoledo-hero.jpg')" }}>
+        <div className="w-full max-w-[50%] bg-white bg-opacity-95 p-6 rounded-lg shadow-lg">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-toledo-blue mb-6">
+            Expert Office Hours
+          </h1>
+
+          <p className="text-xl md:text-2xl font-medium text-center text-toledo-orange mb-6">
+            Professional support. Strategic clarity. Results that matter.
+          </p>
+
+          <p className="text-lg text-justify text-toledo-grey mb-12">
+            Get direct access to experienced experts ready to help you solve problems, build smarter strategies,
+            develop new skills, and present with impact. Whether you're an individual looking to grow or a team
+            facing complex challenges, Office Hours give you the focused support you need—when you need it.
+          </p>
+
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
+            <div className="text-lg font-medium text-toledo-grey text-center sm:text-left">
+              Book a session. Make a plan. Make it happen! 👉
             </div>
+            <a href="#meet-the-experts">
+              <Button size="lg" className="btn-primary text-lg px-8 py-6 rounded-none">
+                Book a Session
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
+            </a>
           </div>
         </div>
       </section>
+
 
       {/* Meet the Experts Section */}
       <section id="meet-the-experts" className="py-20 bg-toledo-light">
