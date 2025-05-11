@@ -29,15 +29,15 @@ const Index = () => {
               Get direct access to experienced experts ready to help you solve problems, build smarter strategies, develop new skills, and present with impact. Whether you're an individual looking to grow or a team facing complex challenges, Office Hours give you the focused support you need—when you need it.
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
+            <div className="text-toledo-grey text-lg font-medium mt-4 sm:mt-0">
+                👉 Book a session. Make progress. Get it done.
+              </div>
               <a href="#meet-the-experts">
                 <Button size="lg" className="btn-primary text-lg px-8 py-6 rounded-none">
                   Book a Session
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
-              <div className="text-toledo-grey text-lg font-medium mt-4 sm:mt-0">
-                👉 Book a session. Make progress. Get it done.
-              </div>
             </div>
           </div>
         </div>
