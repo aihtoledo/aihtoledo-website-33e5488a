@@ -18,8 +18,8 @@ const Index = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-20 md:pt-40 md:pb-28 bg-white">
         <div className="section-container">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-toledo-blue">
+          <div className="max-w-3xl mx-auto">
+            <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-toledo-blue">
               Expert Office Hours
             </h1>
             <p className="text-xl md:text-2xl font-medium mb-6 text-toledo-gold">
