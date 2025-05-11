@@ -1,7 +1,8 @@
 
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { ArrowRight, Linkedin, ExternalLink } from "lucide-react";
+import { ArrowRight, Linkedin, ExternalLink, ChevronDown, ChevronUp } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 interface ExpertCardProps {
@@ -28,10 +29,14 @@ const ExpertCard = ({
   className 
 }: ExpertCardProps) => {
   const isMobile = useIsMobile();
+  const [expanded, setExpanded] = useState(false);
+
+  // Define fixed height for collapsed state
+  const collapsedHeight = "120px";
 
   return (
-    <div className={cn("flex flex-col bg-white shadow-lg p-6 border-t-4 border-toledo-orange", className)}>
-      <div className="flex flex-col gap-6">
+    <div className={cn("flex flex-col bg-white shadow-lg p-6 border-t-4 border-toledo-orange h-full", className)}>
+      <div className="flex flex-col gap-6 h-full">
         <div className="flex flex-col items-center">
           <div className="w-32 h-32 rounded-full overflow-hidden shrink-0 mb-3">
             <img 
@@ -82,7 +87,7 @@ const ExpertCard = ({
           </Button>
         </div>
 
-        <div>
+        <div className="flex-grow flex flex-col">
           {services && services.length > 0 && (
             <div className="mb-3">
               <ul className="list-disc pl-5 text-sm text-toledo-grey">
@@ -93,7 +98,33 @@ const ExpertCard = ({
             </div>
           )}
           
-          <p className="text-toledo-grey text-sm text-justify hyphens-auto no-orphans">{bio}</p>
+          <div className="relative flex-grow">
+            <div 
+              className={cn(
+                "text-toledo-grey text-sm text-justify hyphens-auto no-orphans overflow-hidden transition-all duration-300", 
+                expanded ? "max-h-full" : `max-h-[${collapsedHeight}]`
+              )}
+            >
+              {bio}
+            </div>
+            
+            {/* Fade overlay when collapsed */}
+            {!expanded && (
+              <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
+            )}
+            
+            {/* Expand/collapse button */}
+            <button
+              onClick={() => setExpanded(!expanded)}
+              className="flex items-center justify-center w-full mt-2 text-toledo-blue text-sm hover:text-toledo-orange transition-colors"
+            >
+              {expanded ? (
+                <>Show less <ChevronUp className="ml-1 w-4 h-4" /></>
+              ) : (
+                <>Read more <ChevronDown className="ml-1 w-4 h-4" /></>
+              )}
+            </button>
+          </div>
         </div>
       </div>
     </div>
