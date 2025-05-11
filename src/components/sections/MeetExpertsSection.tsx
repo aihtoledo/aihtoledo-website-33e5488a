@@ -4,7 +4,7 @@ import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 const MeetExpertsSection = () => {
   return (
-    <section id="meet-the-experts" className="py-12 bg-toledo-light">
+    <section id="meet-the-experts" className="py-6 bg-toledo-light">
       <div className="section-container">
         <AnimateOnScroll>
           <div className="text-center mb-10">
