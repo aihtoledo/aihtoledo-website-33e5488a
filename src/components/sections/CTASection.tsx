@@ -26,11 +26,11 @@ const CTASection = () => {
           </AnimateOnScroll>
           
           <AnimateOnScroll delay={200}>
-            <div className="rounded-lg overflow-hidden shadow-lg">
+            <div className="rounded-lg overflow-hidden shadow-lg h-full">
               <img 
                 src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81" 
                 alt="Collaboration at whiteboard session" 
-                className="w-full h-auto object-cover rounded-lg"
+                className="w-full h-full object-cover rounded-lg"
               />
             </div>
           </AnimateOnScroll>
