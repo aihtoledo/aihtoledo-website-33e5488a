@@ -17,12 +17,12 @@ const Index = () => {
       
       {/* Hero Section */}
       <section className="pt-32 pb-20 md:pt-40 md:pb-28 bg-white bg-cover bg-center" style={{ backgroundImage: "url('/lovable-uploads/aihtoledo-hero.jpg')" }}>
-        <div className="section-container bg-white rounded-lg p-1 shadow-lg max-w-3xl">
-          <div className="max-w-3xl mx-auto">
+        <div className="section-container bg-white rounded-lg p-1 shadow-lg">
+          <div className="max-w-2xl mx-auto">
             <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-toledo-blue">
               Expert Office Hours
             </h1>
-            <p className="text-center text-xl md:text-2xl font-medium mb-6 text-toledo-gold">
+            <p className="text-center text-xl md:text-2xl font-medium mb-6 text-toledo-orange">
               Professional support. Strategic clarity. Results that matter.
             </p>
             <p className="text-justify text-lg text-toledo-grey mb-12">
