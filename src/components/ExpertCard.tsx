@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Linkedin, ExternalLink } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 interface ExpertCardProps {
@@ -47,8 +47,9 @@ const ExpertCard = ({
                 href={linkedInLink} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-sm text-toledo-blue hover:text-toledo-orange transition-colors"
+                className="text-sm text-toledo-blue hover:text-toledo-orange transition-colors flex items-center gap-1"
               >
+                <Linkedin className="w-4 h-4" />
                 LinkedIn
               </a>
             )}
@@ -57,8 +58,9 @@ const ExpertCard = ({
                 href={personalSiteLink} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-sm text-toledo-blue hover:text-toledo-orange transition-colors"
+                className="text-sm text-toledo-blue hover:text-toledo-orange transition-colors flex items-center gap-1"
               >
+                <ExternalLink className="w-4 h-4" />
                 Website
               </a>
             )}
