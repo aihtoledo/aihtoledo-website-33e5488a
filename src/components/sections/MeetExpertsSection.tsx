@@ -45,6 +45,11 @@ const MeetExpertsSection = () => {
               bio="I am a user experience consultant, working with business and IT teams to define, design and deliver great experiences for people using technology. As part of Tech Toledo (from 2011-2019), I helped foster the tech ecosystem in the Toledo region. With things like Toledo Codes, time for the next iteration."
               bookingLink="#"
               personalSiteLink="https://dexterityux.com/"
+              services={[
+                "User Experience Design",
+                "Tech Hub Architecture",
+                "Tech Community Engagement"
+              ]}
             />
           </AnimateOnScroll>
 
