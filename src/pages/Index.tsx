@@ -53,7 +53,7 @@ const Index = () => {
         <div className="section-container">
           <AnimateOnScroll>
             <div className="text-center mb-16">
-              <div className="inline-block bg-toledo-orange px-4 py-1.5 text-toledo-blue font-medium mb-4">
+              <div className="text-toledo-orange font-medium mb-4">
                 👋 Meet The Experts
               </div>
               <h2 className="section-heading">
