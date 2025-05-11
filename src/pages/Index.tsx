@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import Navbar from "@/components/Navbar";
@@ -95,6 +96,11 @@ const Index = () => {
                 bio="Michael Vanderpool is a lifelong learner and educator with a passion for helping others grow. With a background in entrepreneurship and creative media, he has applied his skills in video production, writing, and web design across various industries. After earning his bachelor's from Oakland University, he completed a Master of Education in Learning Design and Technology at Bowling Green State University, where he also taught visual communication."
                 bookingLink="#"
                 linkedInLink="https://www.linkedin.com/in/vanderpoolmichael/"
+                services={[
+                  "Fractional CLO",
+                  "Strategic Planning",
+                  "Presentation Design and Delivery"
+                ]}
               />
             </AnimateOnScroll>
           </div>
