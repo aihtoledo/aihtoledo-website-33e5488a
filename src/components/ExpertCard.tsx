@@ -75,7 +75,7 @@ const ExpertCard = ({
             </div>
           )}
           
-          <p className="text-toledo-grey text-sm text-center">{bio}</p>
+          <p className="text-toledo-grey text-sm text-center text-justify">{bio}</p>
         </div>
       </div>
       <div className="mt-auto pt-4 border-t border-gray-100 mt-6">
