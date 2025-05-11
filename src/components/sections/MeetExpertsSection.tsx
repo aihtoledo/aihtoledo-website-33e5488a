@@ -29,7 +29,6 @@ const MeetExpertsSection = () => {
               bio="I am a seasoned software and systems engineer. As the Director of Engineering at Actual Reality Technologies, I lead teams across the stack—from front-end interfaces to data infrastructure—delivering solutions for startups and larger enterprises alike. My career has included roles at companies like Vida Health, United Airlines, and JetInsight, where I've championed collaborative, people-first engineering cultures."
               bookingLink="https://cal.com/justinbeaudry"
               linkedInLink="https://www.linkedin.com/in/justinbeaudry/"
-              className="h-full"
             />
           </AnimateOnScroll>
 
@@ -41,7 +40,6 @@ const MeetExpertsSection = () => {
               bio="I am a user experience consultant, working with business and IT teams to define, design and deliver great experiences for people using technology. As part of Tech Toledo (from 2011-2019), I helped foster the tech ecosystem in the Toledo region. With things like Toledo Codes, time for the next iteration."
               bookingLink="#"
               personalSiteLink="https://dexterityux.com/"
-              className="h-full"
             />
           </AnimateOnScroll>
 
@@ -58,7 +56,6 @@ const MeetExpertsSection = () => {
                 "Strategic Planning",
                 "Presentation Design and Delivery"
               ]}
-              className="h-full"
             />
           </AnimateOnScroll>
         </div>
