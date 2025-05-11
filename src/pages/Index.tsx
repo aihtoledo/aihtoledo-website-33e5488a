@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import Navbar from "@/components/Navbar";
@@ -53,7 +52,7 @@ const Index = () => {
         <div className="section-container">
           <AnimateOnScroll>
             <div className="text-center mb-16">
-              <div className="text-toledo-orange font-medium mb-4">
+              <div className="text-toledo-orange font-medium text-xl mb-4">
                 👋 Meet The Experts
               </div>
               <h2 className="section-heading">
