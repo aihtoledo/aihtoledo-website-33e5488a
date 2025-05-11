@@ -100,8 +100,13 @@
   }
   
   /* Ensure card descriptions are left-aligned */
-  .card p, .card-description, .card-content p {
-    @apply text-left hyphens-none;
+  .card-description, 
+  .card p, 
+  .card-content p, 
+  [class*="card"] p, 
+  [class*="CardDescription"],
+  .CardDescription {
+    @apply text-left hyphens-none !important;
   }
 }
 
