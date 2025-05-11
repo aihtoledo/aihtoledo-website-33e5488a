@@ -30,7 +30,7 @@ const Index = () => {
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
             <div className="text-toledo-grey text-lg font-medium mt-4 sm:mt-0">
-                👉 Book a session. Make progress. Get it done.
+                Book a session. Make a plan. Make it happen! 👉 
               </div>
               <a href="#meet-the-experts">
                 <Button size="lg" className="btn-primary text-lg px-8 py-6 rounded-none">
