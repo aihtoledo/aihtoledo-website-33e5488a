@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -96,17 +97,18 @@
   }
 
   p {
-    @apply text-justify hyphens-auto;
+    @apply text-left;
   }
   
-  /* Ensure card descriptions are left-aligned */
-  .card-description, 
+  /* Override any text formatting in cards */
   .card p, 
-  .card-content p, 
   [class*="card"] p, 
-  [class*="CardDescription"],
-  .CardDescription {
-    @apply text-left hyphens-none !important;
+  .CardDescription,
+  [class*="CardDescription"] {
+    text-align: left !important;
+    hyphens: manual !important;
+    text-wrap: normal !important;
+    white-space: normal !important;
   }
 }
 
