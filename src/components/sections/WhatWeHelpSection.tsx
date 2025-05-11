@@ -9,7 +9,7 @@ const WhatWeHelpSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimateOnScroll>
           <div className="text-center mb-16">
-            <div className="text-toledo-orange font-medium text-xl mb-4">
+            <div className="text-toledo-orange font-medium text-base mb-4">
               🧠 What We Help With
             </div>
             <h2 className="section-heading">

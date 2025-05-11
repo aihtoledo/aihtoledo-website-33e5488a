@@ -109,6 +109,7 @@
     hyphens: manual !important;
     text-wrap: normal !important;
     white-space: normal !important;
+    font-size: 1rem !important; /* Ensure consistent font size */
   }
 }
 
