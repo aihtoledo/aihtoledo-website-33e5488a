@@ -25,7 +25,7 @@ const Index = () => {
             <p className="text-center text-xl md:text-2xl font-medium mb-6 text-toledo-gold">
               Professional support. Strategic clarity. Results that matter.
             </p>
-            <p className="text-lg text-toledo-grey mb-12">
+            <p className="text-justify text-lg text-toledo-grey mb-12">
               Get direct access to experienced experts ready to help you solve problems, build smarter strategies, develop new skills, and present with impact. Whether you're an individual looking to grow or a team facing complex challenges, Office Hours give you the focused support you need—when you need it.
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
