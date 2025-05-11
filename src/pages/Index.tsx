@@ -39,7 +39,7 @@ const Index = () => {
             <a href="#meet-the-experts">
               <Button size="lg" className="btn-primary text-lg px-8 py-6 rounded-none">
                 Book a Session
-                <ArrowRight className="w-5 h-5 ml-2" />
+                <ArrowDown className="w-5 h-5 ml-2" />
               </Button>
             </a>
           </div>
