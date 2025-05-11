@@ -98,6 +98,11 @@
   p {
     @apply text-justify hyphens-auto;
   }
+  
+  /* Ensure card descriptions are left-aligned */
+  .card p, .card-description, .card-content p {
+    @apply text-left hyphens-none;
+  }
 }
 
 @layer utilities {
