@@ -31,8 +31,8 @@ const ExpertCard = ({
 
   return (
     <div className={cn("flex flex-col bg-white shadow-lg p-6 border-t-4 border-toledo-orange", className)}>
-      <div className="flex flex-col md:flex-row gap-6">
-        <div className="flex flex-col items-center md:items-start">
+      <div className="flex flex-col gap-6">
+        <div className="flex flex-col items-center">
           <div className="w-32 h-32 rounded-full overflow-hidden shrink-0 mb-3">
             <img 
               src={image} 
@@ -40,8 +40,8 @@ const ExpertCard = ({
               className="w-full h-full object-cover"
             />
           </div>
-          <h3 className="text-xl font-bold text-toledo-blue mb-1 text-center md:text-left">{name} <span className="text-sm font-normal text-toledo-grey">({pronouns})</span></h3>
-          <div className="flex flex-wrap gap-3 mb-3 justify-center md:justify-start">
+          <h3 className="text-xl font-bold text-toledo-blue mb-1 text-center">{name} <span className="text-sm font-normal text-toledo-grey">({pronouns})</span></h3>
+          <div className="flex flex-wrap gap-3 mb-3 justify-center">
             {linkedInLink && (
               <a 
                 href={linkedInLink} 
@@ -64,7 +64,7 @@ const ExpertCard = ({
             )}
           </div>
         </div>
-        <div className={isMobile ? "mt-3" : ""}>
+        <div>
           {services && services.length > 0 && (
             <div className="mb-3">
               <ul className="list-disc pl-5 text-sm text-toledo-grey">
@@ -75,7 +75,7 @@ const ExpertCard = ({
             </div>
           )}
           
-          <p className="text-toledo-grey text-sm line-clamp-6 md:line-clamp-none text-center md:text-left">{bio}</p>
+          <p className="text-toledo-grey text-sm text-center">{bio}</p>
         </div>
       </div>
       <div className="mt-auto pt-4 border-t border-gray-100 mt-6">
