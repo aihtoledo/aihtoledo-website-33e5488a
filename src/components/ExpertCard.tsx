@@ -11,6 +11,7 @@ interface ExpertCardProps {
   bookingLink: string;
   linkedInLink?: string;
   personalSiteLink?: string;
+  services?: string[];
   className?: string;
 }
 
@@ -21,7 +22,8 @@ const ExpertCard = ({
   bio, 
   bookingLink, 
   linkedInLink, 
-  personalSiteLink, 
+  personalSiteLink,
+  services,
   className 
 }: ExpertCardProps) => {
   return (
@@ -59,6 +61,16 @@ const ExpertCard = ({
             )}
           </div>
           <p className="text-toledo-grey text-sm line-clamp-6 md:line-clamp-none">{bio}</p>
+          
+          {services && services.length > 0 && (
+            <div className="mt-3">
+              <ul className="list-disc pl-5 text-sm text-toledo-grey">
+                {services.map((service, index) => (
+                  <li key={index}>{service}</li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       </div>
       <div className="mt-auto pt-4 border-t border-gray-100">
