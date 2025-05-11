@@ -6,7 +6,7 @@ import { Briefcase, Users, BookOpen } from "lucide-react";
 const WhoItIsForSection = () => {
   return (
     <section id="who-its-for" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="section-container">
         <AnimateOnScroll>
           <div className="text-center mb-16">
             <div className="text-toledo-orange font-medium text-xl mb-4">
@@ -16,7 +16,7 @@ const WhoItIsForSection = () => {
               Supporting diverse professionals across industries
             </h2>
             <p className="text-lg text-toledo-grey max-w-3xl mx-auto mb-12">
-              Anyone who's ready to stop spinning wheels and start making things happen.
+              For professionals facing complex challenges, tight deadlines, and the need for specialized expertise that's not readily available on their teams.
             </p>
           </div>
         </AnimateOnScroll>
