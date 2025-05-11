@@ -17,8 +17,8 @@ const Index = () => {
       
       {/* Hero Section */}
       <section className="pt-32 pb-20 md:pt-40 md:pb-28 bg-white bg-cover bg-center" style={{ backgroundImage: "url('/lovable-uploads/aihtoledo-hero.jpg')" }}>
-        <div className="section-container bg-white rounded-lg p-1 shadow-lg max-w-md opacity-95">
-          <div className="mx-auto">
+      <div className="bg-white rounded-lg p-6 shadow-lg opacity-95 max-w-md w-full mx-auto">
+      <div className="mx-auto">
             <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-toledo-blue">
               Expert Office Hours
             </h1>
