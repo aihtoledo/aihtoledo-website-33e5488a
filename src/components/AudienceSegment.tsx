@@ -13,7 +13,7 @@ const AudienceSegment = ({ title, icon, className }: AudienceSegmentProps) => {
       <div className="flex items-center justify-center h-16 w-16 text-toledo-blue mb-5">
         {icon}
       </div>
-      <h3 className="text-lg font-bold text-center text-toledo-blue">{title}</h3>
+      <h3 className="text-lg font-bold text-center text-toledo-blue whitespace-pre-line">{title}</h3>
     </div>
   );
 };

@@ -31,7 +31,7 @@ const WhoItIsForSection = () => {
 
           <AnimateOnScroll delay={200}>
             <AudienceSegment 
-              title="HR and L&D Leaders"
+              title={"HR and L&D\nLeaders"}
               icon={<Users className="h-8 w-8" />}
             />
           </AnimateOnScroll>
