@@ -4,17 +4,17 @@ import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 const MeetExpertsSection = () => {
   return (
-    <section id="meet-the-experts" className="py-20 bg-toledo-light">
+    <section id="meet-the-experts" className="py-12 bg-toledo-light">
       <div className="section-container">
         <AnimateOnScroll>
-          <div className="text-center mb-16">
+          <div className="text-center mb-10">
             <div className="text-toledo-orange font-medium text-xl mb-4">
               👋 Meet The Experts
             </div>
             <h2 className="section-heading">
               Book a session with our experienced professionals
             </h2>
-            <p className="text-lg text-toledo-grey max-w-3xl mx-auto mb-12">
+            <p className="text-lg text-toledo-grey max-w-3xl mx-auto mb-8">
               Our experts bring years of experience and specialized knowledge to help you tackle challenges and achieve your goals.
             </p>
           </div>
