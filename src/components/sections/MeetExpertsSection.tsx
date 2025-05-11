@@ -29,6 +29,11 @@ const MeetExpertsSection = () => {
               bio="I am a seasoned software and systems engineer. As the Director of Engineering at Actual Reality Technologies, I lead teams across the stack—from front-end interfaces to data infrastructure—delivering solutions for startups and larger enterprises alike. My career has included roles at companies like Vida Health, United Airlines, and JetInsight, where I've championed collaborative, people-first engineering cultures."
               bookingLink="https://cal.com/justinbeaudry"
               linkedInLink="https://www.linkedin.com/in/justinbeaudry/"
+              services={[
+                "Fractional CTO",
+                "Data Infrastructure Design",
+                "AI Adoption"
+              ]}
             />
           </AnimateOnScroll>
 
