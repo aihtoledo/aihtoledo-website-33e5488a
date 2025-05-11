@@ -6,7 +6,7 @@ import { BookOpen, Brain, Presentation } from "lucide-react";
 const WhatWeHelpSection = () => {
   return (
     <section id="what-we-help" className="py-20 bg-toledo-light">
-      <div className="section-container">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimateOnScroll>
           <div className="text-center mb-16">
             <div className="text-toledo-orange font-medium text-xl mb-4">
