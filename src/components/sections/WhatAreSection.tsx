@@ -29,7 +29,7 @@ const WhatAreSection = () => {
           {/* Left column with image (now on the right) */}
           <div className="md:w-1/2">
             <AnimateOnScroll>
-              <div className="h-full min-h-[300px] md:min-h-[400px] bg-cover bg-center rounded-lg shadow-lg" 
+              <div className="h-full min-h-[300px] md:min-h-[400px] bg-cover bg-center rounded-lg shadow-lg scale-x-[-1]" 
                    style={{ backgroundImage: "url('/lovable-uploads/aihtoledo-hero.jpg')" }}>
               </div>
             </AnimateOnScroll>
