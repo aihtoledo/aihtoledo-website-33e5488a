@@ -40,11 +40,11 @@ const Index = () => {
 
           <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
             <div className="text-lg font-medium text-toledo-grey text-center sm:text-left">
-              Book a session. Make a plan. Make it happen! 👉
+              Book a session. Make a plan.<br />Make it happen! 👉
             </div>
             <a href="#meet-the-experts">
               <Button size="lg" className="btn-primary text-lg px-8 py-6 rounded-none">
-                Book a Session
+                Book a<br />Session
               </Button>
             </a>
           </div>
@@ -313,7 +313,7 @@ const Index = () => {
               </p>
               <a href="#meet-the-experts">
                 <Button variant="default" size="lg" className="btn-primary text-lg px-10 py-6 rounded-none">
-                  Book Your Session Now
+                  Book Your<br />Session Now
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
