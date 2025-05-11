@@ -22,7 +22,7 @@ const Index = () => {
             <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-toledo-blue">
               Expert Office Hours
             </h1>
-            <p className="text-xl md:text-2xl font-medium mb-6 text-toledo-gold">
+            <p className="text-center text-xl md:text-2xl font-medium mb-6 text-toledo-gold">
               Professional support. Strategic clarity. Results that matter.
             </p>
             <p className="text-lg text-toledo-grey mb-12">
