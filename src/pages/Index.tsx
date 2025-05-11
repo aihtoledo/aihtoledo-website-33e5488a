@@ -16,7 +16,7 @@ const Index = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 md:pt-40 md:pb-28 bg-white bg-cover bg-center" style={{ backgroundImage: "url('/loveable-uploads/aihtoledo-hero.jpg')" }}>
+      <section className="pt-32 pb-20 md:pt-40 md:pb-28 bg-white bg-cover bg-center" style={{ backgroundImage: "url('/lovable-uploads/aihtoledo-hero.jpg')" }}>
         <div className="section-container">
           <div className="max-w-3xl mx-auto">
             <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-toledo-blue">
