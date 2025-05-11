@@ -67,7 +67,7 @@ export default {
 				"toledo-gold": "#FFB81C", // Toledo Gold
 				"toledo-grey": "#54565A", // Complementary grey
 				"toledo-light": "#F5F5F5", // Light background color
-				"toledo-orange": "EC8305", // Toledo Orange
+				"toledo-orange": "#EC8305", // Toledo Orange
 				// Keep the original eoh-blue for backward compatibility
 				"eoh-blue": {
 					50: "#eff6ff",
