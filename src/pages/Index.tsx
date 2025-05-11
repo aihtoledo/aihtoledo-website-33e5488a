@@ -17,7 +17,7 @@ const Index = () => {
       
       {/* Hero Section */}
       <section className="min-h-screen flex items-end justify-center bg-cover bg-center" style={{ backgroundImage: "url('/lovable-uploads/aihtoledo-hero.jpg')" }}>
-        <div className="w-full max-w-[50%] bg-white bg-opacity-95 p-6 rounded-lg shadow-lg">
+        <div className="w-full max-w-[50%] bg-white bg-opacity-95 p-6 rounded-lg shadow-lg mb-8">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-toledo-blue mb-6">
             Expert Office Hours
           </h1>
