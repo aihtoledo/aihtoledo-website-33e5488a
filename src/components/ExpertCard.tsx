@@ -60,17 +60,18 @@ const ExpertCard = ({
               </a>
             )}
           </div>
-          <p className="text-toledo-grey text-sm line-clamp-6 md:line-clamp-none">{bio}</p>
           
           {services && services.length > 0 && (
-            <div className="mt-3">
+            <div className="mt-1 mb-3">
               <ul className="list-disc pl-5 text-sm text-toledo-grey">
                 {services.map((service, index) => (
-                  <li key={index}>{service}</li>
+                  <li key={index} className="font-bold">{service}</li>
                 ))}
               </ul>
             </div>
           )}
+          
+          <p className="text-toledo-grey text-sm line-clamp-6 md:line-clamp-none">{bio}</p>
         </div>
       </div>
       <div className="mt-auto pt-4 border-t border-gray-100">
