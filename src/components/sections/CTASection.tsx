@@ -7,7 +7,7 @@ const CTASection = () => {
   return (
     <section className="py-20 bg-toledo-orange">
       <div className="section-container">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch h-full">
           <AnimateOnScroll>
             <div className="max-w-xl mx-auto md:mx-0 text-center md:text-left">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
@@ -25,8 +25,8 @@ const CTASection = () => {
             </div>
           </AnimateOnScroll>
           
-          <AnimateOnScroll delay={200} className="flex h-full">
-            <div className="w-full h-full rounded-lg overflow-hidden shadow-lg">
+          <AnimateOnScroll delay={200} className="h-full">
+            <div className="h-full rounded-lg overflow-hidden shadow-lg">
               <img 
                 src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81" 
                 alt="Collaboration at whiteboard session" 

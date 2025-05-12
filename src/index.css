@@ -161,3 +161,14 @@
 .section-subheading {
   @apply text-xl md:text-2xl font-medium mb-6 text-toledo-grey no-orphans;
 }
+
+/* Fix for CTA section image height */
+.bg-toledo-orange .grid {
+  min-height: 400px;
+}
+
+.bg-toledo-orange .h-full img {
+  height: 100%;
+  object-fit: cover;
+  min-height: 400px;
+}
