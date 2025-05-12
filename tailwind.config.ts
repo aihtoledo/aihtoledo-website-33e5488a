@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -80,6 +81,11 @@ export default {
 					700: "#1d4ed8",
 					800: "#1e40af",
 					900: "#1e3a8a"
+				},
+				// Adding pink colors
+				"pink": {
+					600: "#D946EF",
+					700: "#C026D3",
 				}
 			},
 			borderRadius: {
