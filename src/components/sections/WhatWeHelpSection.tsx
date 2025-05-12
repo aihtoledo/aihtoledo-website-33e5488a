@@ -28,7 +28,8 @@ const WhatWeHelpSection = () => {
                 "AI readiness assessment",
                 "Use case identification and prioritization",
                 "Ethical AI implementation frameworks",
-                "Change management for AI integration"
+                "Change management for AI integration",
+                "ROI measurement and optimization"
               ]}
               icon={<BrainCog className="h-6 w-6" />}
             />
@@ -42,7 +43,9 @@ const WhatWeHelpSection = () => {
               features={[
                 "Navigate uncertainty with clarity",
                 "Break complex problems into actionable next steps",
-                "Use proven methodologies to prototype, model, or analyze your options"
+                "Use proven methodologies to analyze options",
+                "Develop comprehensive solution frameworks",
+                "Implement strategic decision-making protocols"
               ]}
               icon={<Brain className="h-6 w-6" />}
             />
@@ -73,7 +76,8 @@ const WhatWeHelpSection = () => {
                 "Data strategy development",
                 "Data pipeline architecture",
                 "Analytics infrastructure design",
-                "Data governance implementation"
+                "Data governance implementation",
+                "Scalability and performance optimization"
               ]}
               icon={<Database className="h-6 w-6" />}
             />
@@ -88,7 +92,8 @@ const WhatWeHelpSection = () => {
                 "Tech infrastructure planning",
                 "Collaborative workspace design",
                 "Innovation pipeline development",
-                "Technology integration strategies"
+                "Technology integration strategies",
+                "Cross-functional workflow optimization"
               ]}
               icon={<Network className="h-6 w-6" />}
             />
@@ -103,7 +108,8 @@ const WhatWeHelpSection = () => {
                 "User research and persona development",
                 "Interface design and prototyping",
                 "Usability testing and optimization",
-                "Accessibility compliance implementation"
+                "Accessibility compliance implementation",
+                "Customer journey mapping"
               ]}
               icon={<Layout className="h-6 w-6" />}
             />
@@ -117,7 +123,9 @@ const WhatWeHelpSection = () => {
               features={[
                 "Build learning plans for individuals or teams",
                 "Design scalable training programs",
-                "Align talent development with business strategy"
+                "Align talent development with business strategy",
+                "Create knowledge management systems",
+                "Measure and optimize learning outcomes"
               ]}
               icon={<BookOpen className="h-6 w-6" />}
             />
@@ -132,7 +140,8 @@ const WhatWeHelpSection = () => {
                 "Community building strategies",
                 "Technical mentorship programs",
                 "Knowledge sharing platforms",
-                "Developer advocacy initiatives"
+                "Developer advocacy initiatives",
+                "Community-driven innovation frameworks"
               ]}
               icon={<Users className="h-6 w-6" />}
             />
@@ -145,8 +154,10 @@ const WhatWeHelpSection = () => {
               description="We help you tell the right story—whether it's a pitch, a board presentation, or a keynote."
               features={[
                 "Structure your message for maximum impact",
-                "Design visuals that don't just look good—they drive action",
-                "Rehearse with expert feedback to perfect your delivery"
+                "Design visuals that drive action",
+                "Rehearse with expert feedback to perfect delivery",
+                "Develop compelling presentation narratives",
+                "Tailor communication for diverse audiences"
               ]}
               icon={<Presentation className="h-6 w-6" />}
             />
