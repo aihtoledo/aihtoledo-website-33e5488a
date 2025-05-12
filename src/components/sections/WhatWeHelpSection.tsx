@@ -1,7 +1,7 @@
 
 import ServiceCard from "@/components/ServiceCard";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
-import { BookOpen, Brain, Presentation, Layout, Network, Users } from "lucide-react";
+import { BookOpen, Brain, Presentation, Layout, Network, Users, Database, BrainCog } from "lucide-react";
 
 const WhatWeHelpSection = () => {
   return (
@@ -113,6 +113,36 @@ const WhatWeHelpSection = () => {
                 "Developer advocacy initiatives"
               ]}
               icon={<Users className="h-6 w-6" />}
+            />
+          </AnimateOnScroll>
+          
+          {/* AI Adoption Service Card */}
+          <AnimateOnScroll delay={800}>
+            <ServiceCard
+              title="AI Adoption"
+              description="Navigate the complex landscape of artificial intelligence with expert guidance to implement AI solutions that create real business value."
+              features={[
+                "AI readiness assessment",
+                "Use case identification and prioritization",
+                "Ethical AI implementation frameworks",
+                "Change management for AI integration"
+              ]}
+              icon={<BrainCog className="h-6 w-6" />}
+            />
+          </AnimateOnScroll>
+          
+          {/* Data Infrastructure Design */}
+          <AnimateOnScroll delay={900}>
+            <ServiceCard
+              title="Data Infrastructure Design"
+              description="Build robust, scalable data architectures that turn your organization's information into actionable insights and competitive advantage."
+              features={[
+                "Data strategy development",
+                "Data pipeline architecture",
+                "Analytics infrastructure design",
+                "Data governance implementation"
+              ]}
+              icon={<Database className="h-6 w-6" />}
             />
           </AnimateOnScroll>
         </div>
