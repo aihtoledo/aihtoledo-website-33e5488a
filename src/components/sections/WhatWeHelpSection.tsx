@@ -1,7 +1,7 @@
 
 import ServiceCard from "@/components/ServiceCard";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
-import { BookOpen, Brain, Presentation } from "lucide-react";
+import { BookOpen, Brain, Presentation, Layout, Network, Users } from "lucide-react";
 
 const WhatWeHelpSection = () => {
   return (
@@ -18,7 +18,7 @@ const WhatWeHelpSection = () => {
           </div>
         </AnimateOnScroll>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <AnimateOnScroll delay={100}>
             <ServiceCard
               title="Fractional Chief Learning Officer Support"
@@ -70,6 +70,49 @@ const WhatWeHelpSection = () => {
                 "Rehearse with expert feedback to perfect your delivery"
               ]}
               icon={<Presentation className="h-6 w-6" />}
+            />
+          </AnimateOnScroll>
+          
+          {/* New Service Cards */}
+          <AnimateOnScroll delay={500}>
+            <ServiceCard
+              title="User Experience Design"
+              description="Create intuitive, engaging digital experiences that delight users and drive business results through strategic UX design."
+              features={[
+                "User research and persona development",
+                "Interface design and prototyping",
+                "Usability testing and optimization",
+                "Accessibility compliance implementation"
+              ]}
+              icon={<Layout className="h-6 w-6" />}
+            />
+          </AnimateOnScroll>
+          
+          <AnimateOnScroll delay={600}>
+            <ServiceCard
+              title="Tech Hub Architecture"
+              description="Design and implement innovative technological ecosystems that foster collaboration, innovation, and efficiency across your organization."
+              features={[
+                "Tech infrastructure planning",
+                "Collaborative workspace design",
+                "Innovation pipeline development",
+                "Technology integration strategies"
+              ]}
+              icon={<Network className="h-6 w-6" />}
+            />
+          </AnimateOnScroll>
+          
+          <AnimateOnScroll delay={700}>
+            <ServiceCard
+              title="Tech Community Engagement"
+              description="Build vibrant technical communities that drive knowledge sharing, talent development, and create sustainable competitive advantages."
+              features={[
+                "Community building strategies",
+                "Technical mentorship programs",
+                "Knowledge sharing platforms",
+                "Developer advocacy initiatives"
+              ]}
+              icon={<Users className="h-6 w-6" />}
             />
           </AnimateOnScroll>
         </div>
