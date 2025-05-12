@@ -25,12 +25,13 @@ const CTASection = () => {
             </div>
           </AnimateOnScroll>
           
-          <AnimateOnScroll delay={200}>
-            <div className="rounded-lg overflow-hidden shadow-lg h-full">
+          <AnimateOnScroll delay={200} className="h-full">
+            <div className="h-full rounded-lg overflow-hidden shadow-lg">
               <img 
                 src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81" 
                 alt="Collaboration at whiteboard session" 
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full object-cover"
+                style={{ minHeight: '100%' }}
               />
             </div>
           </AnimateOnScroll>
