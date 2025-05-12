@@ -14,7 +14,7 @@ const ServiceCard = ({ title, description, features, icon, className }: ServiceC
   return (
     <Card className={cn("h-full transition-all duration-200 hover:shadow-lg border-t-4 border-t-toledo-gold", className)}>
       <CardHeader>
-        <div className="flex items-center justify-center h-12 w-12 text-toledo-blue mb-4">{icon}</div>
+        <div className="flex items-center justify-center h-12 w-12 text-toledo-blue mb-4 bg-toledo-light/50 rounded-full p-2">{icon}</div>
         <CardTitle className="text-xl font-bold text-toledo-blue">{title}</CardTitle>
         <CardDescription className="text-base text-toledo-grey mt-3 whitespace-normal">{description}</CardDescription>
       </CardHeader>

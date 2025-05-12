@@ -1,7 +1,7 @@
 
 import ServiceCard from "@/components/ServiceCard";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
-import { BookOpen, Brain, Presentation } from "lucide-react";
+import { BookOpen, Brain, Presentation, Code, Database, Shield } from "lucide-react";
 
 const WhatWeHelpSection = () => {
   return (
@@ -18,7 +18,7 @@ const WhatWeHelpSection = () => {
           </div>
         </AnimateOnScroll>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <AnimateOnScroll delay={100}>
             <ServiceCard
               title="Fractional Chief Learning Officer Support"
@@ -70,6 +70,49 @@ const WhatWeHelpSection = () => {
                 "Rehearse with expert feedback to perfect your delivery"
               ]}
               icon={<Presentation className="h-6 w-6" />}
+            />
+          </AnimateOnScroll>
+
+          {/* Keith's Skills Cards */}
+          <AnimateOnScroll delay={500}>
+            <ServiceCard
+              title="Software Architecture & Development"
+              description="Need help designing scalable software solutions or evaluating your current tech stack? Get expert guidance from an experienced software architect."
+              features={[
+                "Full-stack application development",
+                "Cloud architecture design and implementation",
+                "Legacy system modernization",
+                "Code reviews and technical debt analysis"
+              ]}
+              icon={<Code className="h-6 w-6" />}
+            />
+          </AnimateOnScroll>
+
+          <AnimateOnScroll delay={600}>
+            <ServiceCard
+              title="Data Strategy & Analytics"
+              description="Transform your data into actionable insights with strategic data planning and implementation of effective analytics solutions."
+              features={[
+                "Data architecture design",
+                "Business intelligence implementation",
+                "Data visualization and dashboard creation",
+                "Machine learning and AI applications"
+              ]}
+              icon={<Database className="h-6 w-6" />}
+            />
+          </AnimateOnScroll>
+
+          <AnimateOnScroll delay={700}>
+            <ServiceCard
+              title="Cybersecurity & Risk Management"
+              description="Protect your digital assets and ensure compliance with comprehensive security assessments and risk management strategies."
+              features={[
+                "Security vulnerability assessments",
+                "Compliance planning (GDPR, HIPAA, SOC2)",
+                "Security policy development",
+                "Incident response planning"
+              ]}
+              icon={<Shield className="h-6 w-6" />}
             />
           </AnimateOnScroll>
         </div>
