@@ -19,20 +19,37 @@ const WhatWeHelpSection = () => {
         </AnimateOnScroll>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* AI Adoption Service Card - Now first */}
           <AnimateOnScroll delay={100}>
             <ServiceCard
-              title="Fractional Chief Learning Officer Support"
-              description="Need help building a learning strategy? Launching a professional development initiative? Aligning training with your business goals? You get CLO-level support—without the full-time overhead."
+              title="AI Adoption"
+              description="Navigate the complex landscape of artificial intelligence with expert guidance to implement AI solutions that create real business value."
               features={[
-                "Build learning plans for individuals or teams",
-                "Design scalable training programs",
-                "Align talent development with business strategy"
+                "AI readiness assessment",
+                "Use case identification and prioritization",
+                "Ethical AI implementation frameworks",
+                "Change management for AI integration"
               ]}
-              icon={<BookOpen className="h-6 w-6" />}
+              icon={<BrainCog className="h-6 w-6" />}
+            />
+          </AnimateOnScroll>
+          
+          {/* Strategic Problem-Solving - Now second */}
+          <AnimateOnScroll delay={200}>
+            <ServiceCard
+              title="Strategic Problem-Solving"
+              description="Not sure how to tackle a challenge? We'll work together to map it, frame it, and solve it. Call it innovation, call it systems thinking—we call it making it happen."
+              features={[
+                "Navigate uncertainty with clarity",
+                "Break complex problems into actionable next steps",
+                "Use proven methodologies to prototype, model, or analyze your options"
+              ]}
+              icon={<Brain className="h-6 w-6" />}
             />
           </AnimateOnScroll>
 
-          <AnimateOnScroll delay={200}>
+          {/* Fractional CTO - Now third */}
+          <AnimateOnScroll delay={300}>
             <ServiceCard
               title="Fractional Chief Technology Officer Support"
               description="Need strategic technology leadership without the full-time commitment? Looking to align your tech infrastructure with business goals? Get CTO-level expertise—without the full-time overhead."
@@ -47,48 +64,23 @@ const WhatWeHelpSection = () => {
             />
           </AnimateOnScroll>
 
-          <AnimateOnScroll delay={300}>
-            <ServiceCard
-              title="Strategic Problem-Solving"
-              description="Not sure how to tackle a challenge? We'll work together to map it, frame it, and solve it. Call it innovation, call it systems thinking—we call it making it happen."
-              features={[
-                "Navigate uncertainty with clarity",
-                "Break complex problems into actionable next steps",
-                "Use proven methodologies to prototype, model, or analyze your options"
-              ]}
-              icon={<Brain className="h-6 w-6" />}
-            />
-          </AnimateOnScroll>
-
+          {/* Data Infrastructure Design - Now fourth */}
           <AnimateOnScroll delay={400}>
             <ServiceCard
-              title="Presentation Coaching & Communication Support"
-              description="We help you tell the right story—whether it's a pitch, a board presentation, or a keynote."
+              title="Data Infrastructure Design"
+              description="Build robust, scalable data architectures that turn your organization's information into actionable insights and competitive advantage."
               features={[
-                "Structure your message for maximum impact",
-                "Design visuals that don't just look good—they drive action",
-                "Rehearse with expert feedback to perfect your delivery"
+                "Data strategy development",
+                "Data pipeline architecture",
+                "Analytics infrastructure design",
+                "Data governance implementation"
               ]}
-              icon={<Presentation className="h-6 w-6" />}
+              icon={<Database className="h-6 w-6" />}
             />
           </AnimateOnScroll>
           
-          {/* New Service Cards */}
+          {/* Tech Hub Architecture - Now fifth */}
           <AnimateOnScroll delay={500}>
-            <ServiceCard
-              title="User Experience Design"
-              description="Create intuitive, engaging digital experiences that delight users and drive business results through strategic UX design."
-              features={[
-                "User research and persona development",
-                "Interface design and prototyping",
-                "Usability testing and optimization",
-                "Accessibility compliance implementation"
-              ]}
-              icon={<Layout className="h-6 w-6" />}
-            />
-          </AnimateOnScroll>
-          
-          <AnimateOnScroll delay={600}>
             <ServiceCard
               title="Tech Hub Architecture"
               description="Design and implement innovative technological ecosystems that foster collaboration, innovation, and efficiency across your organization."
@@ -102,7 +94,37 @@ const WhatWeHelpSection = () => {
             />
           </AnimateOnScroll>
           
+          {/* User Experience Design - Now sixth */}
+          <AnimateOnScroll delay={600}>
+            <ServiceCard
+              title="User Experience Design"
+              description="Create intuitive, engaging digital experiences that delight users and drive business results through strategic UX design."
+              features={[
+                "User research and persona development",
+                "Interface design and prototyping",
+                "Usability testing and optimization",
+                "Accessibility compliance implementation"
+              ]}
+              icon={<Layout className="h-6 w-6" />}
+            />
+          </AnimateOnScroll>
+          
+          {/* Fractional CLO - Now seventh */}
           <AnimateOnScroll delay={700}>
+            <ServiceCard
+              title="Fractional Chief Learning Officer Support"
+              description="Need help building a learning strategy? Launching a professional development initiative? Aligning training with your business goals? You get CLO-level support—without the full-time overhead."
+              features={[
+                "Build learning plans for individuals or teams",
+                "Design scalable training programs",
+                "Align talent development with business strategy"
+              ]}
+              icon={<BookOpen className="h-6 w-6" />}
+            />
+          </AnimateOnScroll>
+
+          {/* Tech Community Engagement - Now eighth */}
+          <AnimateOnScroll delay={800}>
             <ServiceCard
               title="Tech Community Engagement"
               description="Build vibrant technical communities that drive knowledge sharing, talent development, and create sustainable competitive advantages."
@@ -116,33 +138,17 @@ const WhatWeHelpSection = () => {
             />
           </AnimateOnScroll>
           
-          {/* AI Adoption Service Card */}
-          <AnimateOnScroll delay={800}>
-            <ServiceCard
-              title="AI Adoption"
-              description="Navigate the complex landscape of artificial intelligence with expert guidance to implement AI solutions that create real business value."
-              features={[
-                "AI readiness assessment",
-                "Use case identification and prioritization",
-                "Ethical AI implementation frameworks",
-                "Change management for AI integration"
-              ]}
-              icon={<BrainCog className="h-6 w-6" />}
-            />
-          </AnimateOnScroll>
-          
-          {/* Data Infrastructure Design */}
+          {/* Presentation Coaching - Now ninth */}
           <AnimateOnScroll delay={900}>
             <ServiceCard
-              title="Data Infrastructure Design"
-              description="Build robust, scalable data architectures that turn your organization's information into actionable insights and competitive advantage."
+              title="Presentation Coaching & Communication Support"
+              description="We help you tell the right story—whether it's a pitch, a board presentation, or a keynote."
               features={[
-                "Data strategy development",
-                "Data pipeline architecture",
-                "Analytics infrastructure design",
-                "Data governance implementation"
+                "Structure your message for maximum impact",
+                "Design visuals that don't just look good—they drive action",
+                "Rehearse with expert feedback to perfect your delivery"
               ]}
-              icon={<Database className="h-6 w-6" />}
+              icon={<Presentation className="h-6 w-6" />}
             />
           </AnimateOnScroll>
         </div>
