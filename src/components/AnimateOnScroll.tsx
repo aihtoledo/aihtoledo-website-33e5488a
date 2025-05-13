@@ -7,16 +7,9 @@ interface AnimateOnScrollProps {
   className?: string;
   threshold?: number;
   delay?: number;
-  slideDirection?: "left" | "right" | "up" | "down" | "none";
 }
 
-const AnimateOnScroll = ({ 
-  children, 
-  className, 
-  threshold = 0.1, 
-  delay = 0,
-  slideDirection = "up" 
-}: AnimateOnScrollProps) => {
+const AnimateOnScroll = ({ children, className, threshold = 0.1, delay = 0 }: AnimateOnScrollProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -46,31 +39,10 @@ const AnimateOnScroll = ({
     };
   }, [threshold, delay]);
 
-  // Apply different initial translate values based on slideDirection
-  const getSlideClass = () => {
-    if (!isVisible) {
-      switch (slideDirection) {
-        case "left": return "-translate-x-full";
-        case "right": return "translate-x-full";
-        case "up": return "-translate-y-20";
-        case "down": return "translate-y-20";
-        case "none": return "";
-        default: return "-translate-y-20"; // Default is up
-      }
-    }
-    return "translate-x-0 translate-y-0";
-  };
-
   return (
     <div
       ref={ref}
-      className={cn(
-        "transition-all duration-1000 ease-out", 
-        getSlideClass(),
-        !isVisible && "opacity-0", 
-        isVisible && "opacity-100",
-        className
-      )}
+      className={cn("animate-on-scroll", isVisible && "in-view", className)}
     >
       {children}
     </div>
