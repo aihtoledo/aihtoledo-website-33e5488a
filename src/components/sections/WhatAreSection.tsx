@@ -1,35 +1,22 @@
 
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { cn } from "@/lib/utils";
-import { useState, useEffect } from "react";
 
 const WhatAreSection = () => {
   const isMobile = useIsMobile();
-  const [isVisible, setIsVisible] = useState(false);
-  
-  useEffect(() => {
-    // Small delay to trigger the animation after component mount
-    const timer = setTimeout(() => {
-      setIsVisible(true);
-    }, 300);
-    
-    return () => clearTimeout(timer);
-  }, []);
   
   return (
     <section id="what-are" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row gap-8 lg:gap-16">
-          {/* Left column with image - now with slide-in animation */}
+          {/* Left column with image - now with slide-in-from-left animation */}
           <div className="md:w-1/2 overflow-hidden">
-            <div 
-              className={cn(
-                "h-full min-h-[300px] md:min-h-[400px] bg-cover bg-center rounded-lg shadow-lg scale-x-[-1] transition-all duration-1000 ease-out",
-                isVisible ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"
-              )} 
-              style={{ backgroundImage: "url('/lovable-uploads/aihtoledo-hero.jpg')" }}>
-            </div>
+            <AnimateOnScroll threshold={0.2} slideDirection="left">
+              <div 
+                className="h-full min-h-[300px] md:min-h-[400px] bg-cover bg-center rounded-lg shadow-lg scale-x-[-1]" 
+                style={{ backgroundImage: "url('/lovable-uploads/aihtoledo-hero.jpg')" }}>
+              </div>
+            </AnimateOnScroll>
           </div>
           
           {/* Right column with content */}
