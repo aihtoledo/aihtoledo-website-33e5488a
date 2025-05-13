@@ -1,7 +1,7 @@
 
 import ServiceCard from "@/components/ServiceCard";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
-import { BookOpen, Brain, Presentation, Layout, Network, Users, Database, BrainCog } from "lucide-react";
+import { BookOpen, Brain, Presentation, Layout, Network, Users, Database, Rocket } from "lucide-react";
 
 const WhatWeHelpSection = () => {
   return (
@@ -31,7 +31,7 @@ const WhatWeHelpSection = () => {
                 "Change management for AI integration",
                 "ROI measurement and optimization"
               ]}
-              icon={<BrainCog className="h-6 w-6" />}
+              icon={<Rocket className="h-6 w-6" />}
             />
           </AnimateOnScroll>
           
