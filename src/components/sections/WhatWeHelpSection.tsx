@@ -1,7 +1,6 @@
-
 import ServiceCard from "@/components/ServiceCard";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
-import { BookOpen, Brain, Presentation, Layout, Network, Users, Database, Rocket } from "lucide-react";
+import { BookOpen, Brain, Presentation, Layout, Network, Users, Database, Rocket, Computer } from "lucide-react";
 
 const WhatWeHelpSection = () => {
   return (
@@ -63,7 +62,7 @@ const WhatWeHelpSection = () => {
                 "Align technology investments with business strategy",
                 "Build and mentor high-performing technical teams"
               ]}
-              icon={<Brain className="h-6 w-6" />}
+              icon={<Computer className="h-6 w-6" />}
             />
           </AnimateOnScroll>
 
