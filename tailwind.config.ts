@@ -63,50 +63,33 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Professional color palette inspired by Innovation Park
-				"brand": {
-					50: "#f0f6ff",
-					100: "#e0edff",
-					200: "#c7ddff",
-					300: "#a0c4fe",
-					400: "#729ffb",
-					500: "#4f7cf6",
-					600: "#3259eb",
-					700: "#2647d7",
-					800: "#223bae",
-					900: "#213688",
-					950: "#172154"
+				// Modern professional color palette
+				"toledo-blue": "#2563EB", // More vibrant, professional blue
+				"toledo-gold": "#F59E0B", // Warmer, more subtle gold
+				"toledo-orange": "#F97316", // Warmer orange
+				"toledo-grey": "#475569", // Slate gray - professional
+				"toledo-light": "#F8FAFC", // Very light background
+				// Additional colors for gradients and accents
+				"eoh-blue": {
+					50: "#eff6ff",
+					100: "#dbeafe",
+					200: "#bfdbfe",
+					300: "#93c5fd",
+					400: "#60a5fa",
+					500: "#3b82f6",
+					600: "#2563eb",
+					700: "#1d4ed8",
+					800: "#1e40af",
+					900: "#1e3a8a"
 				},
-				"accent": {
-					50: "#fffaeb",
-					100: "#fff0c6",
-					200: "#ffdf89",
-					300: "#ffc94d",
-					400: "#ffb424",
-					500: "#fb9707",
-					600: "#dd7502",
-					700: "#b75105",
-					800: "#94400c",
-					900: "#79360f",
-					950: "#461b04"
-				},
-				"neutral": {
-					50: "#f9fafb",
-					100: "#f2f4f7",
-					200: "#e3e8ef",
-					300: "#cdd5e1",
-					400: "#9ba9bc",
-					500: "#71839d",
-					600: "#566781",
-					700: "#475069",
-					800: "#3a4155",
-					900: "#2a2f3c",
-					950: "#1a1d27"
+				"pink": {
+					600: "#DB2777",
+					700: "#BE185D",
 				}
 			},
 			fontFamily: {
-				sans: ['"Open Sans"', 'Inter', 'system-ui', 'sans-serif'],
-				heading: ['"Montserrat"', 'system-ui', 'sans-serif']
+				sans: ['Inter var', 'Inter', 'system-ui', 'sans-serif'],
+				heading: ['Manrope', 'Inter', 'system-ui', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
