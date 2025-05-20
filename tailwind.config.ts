@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -62,13 +63,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Updated modern color palette
-				"toledo-blue": "#1A57DB", // Brighter, more modern blue
-				"toledo-gold": "#FFB81C", // Keeping the gold
-				"toledo-orange": "#FF6B35", // Brighter, more vibrant orange
-				"toledo-grey": "#3E4C59", // Richer gray
-				"toledo-light": "#F7FAFC", // Lighter background color
-				// Keep the original eoh-blue for backward compatibility
+				// Modern professional color palette
+				"toledo-blue": "#2563EB", // More vibrant, professional blue
+				"toledo-gold": "#F59E0B", // Warmer, more subtle gold
+				"toledo-orange": "#F97316", // Warmer orange
+				"toledo-grey": "#475569", // Slate gray - professional
+				"toledo-light": "#F8FAFC", // Very light background
+				// Additional colors for gradients and accents
 				"eoh-blue": {
 					50: "#eff6ff",
 					100: "#dbeafe",
@@ -81,10 +82,9 @@ export default {
 					800: "#1e40af",
 					900: "#1e3a8a"
 				},
-				// Enhanced pink colors
 				"pink": {
-					600: "#E74694",
-					700: "#D53F8C",
+					600: "#DB2777",
+					700: "#BE185D",
 				}
 			},
 			fontFamily: {
