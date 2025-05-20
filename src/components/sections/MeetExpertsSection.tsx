@@ -28,7 +28,7 @@ const MeetExpertsSection = () => {
             <ExpertCard 
               name="Justin Beaudry" 
               pronouns="he/him"
-              image="/lovable-uploads/612cdb91-bddf-4108-8ab1-bac61f0263e8.png"
+              image="/uploads/612cdb91-bddf-4108-8ab1-bac61f0263e8.png"
               bio="I am a seasoned software and systems engineer. As the Director of Engineering at Actual Reality Technologies, I lead teams across the stack—from front-end interfaces to data infrastructure—delivering solutions for startups and larger enterprises alike. My career has included roles at companies like Vida Health, United Airlines, and JetInsight, where I've championed collaborative, people-first engineering cultures."
               bookingLink="https://cal.com/justinbeaudry"
               linkedInLink="https://www.linkedin.com/in/justinbeaudry/"
@@ -45,7 +45,7 @@ const MeetExpertsSection = () => {
             <ExpertCard 
               name="Keith Instone" 
               pronouns="he/him"
-              image="/lovable-uploads/0786c27d-52ff-46c3-a4b3-4fc9d9903b54.png"
+              image="/uploads/0786c27d-52ff-46c3-a4b3-4fc9d9903b54.png"
               bio="I am a user experience consultant, working with business and IT teams to define, design and deliver great experiences for people using technology. As part of Tech Toledo (from 2011-2019), I helped foster the tech ecosystem in the Toledo region. With things like Toledo Codes, time for the next iteration."
               bookingLink="#"
               personalSiteLink="https://dexterityux.com/"
@@ -62,7 +62,7 @@ const MeetExpertsSection = () => {
             <ExpertCard 
               name="Michael Vanderpool" 
               pronouns="he/him"
-              image="/lovable-uploads/84732a45-fac0-411c-822a-3aaf7ccb11e9.png"
+              image="/uploads/84732a45-fac0-411c-822a-3aaf7ccb11e9.png"
               bio="Michael Vanderpool is a lifelong learner and educator with a passion for helping others grow. With a background in entrepreneurship and creative media, he has applied his skills in video production, writing, and web design across various industries. After earning his bachelor's from Oakland University, he completed a Master of Education in Learning Design and Technology at Bowling Green State University, where he also taught visual communication."
               bookingLink="#"
               linkedInLink="https://www.linkedin.com/in/vanderpoolmichael/"

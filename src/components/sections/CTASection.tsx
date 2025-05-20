@@ -28,7 +28,7 @@ const CTASection = () => {
           <AnimateOnScroll delay={200} className="h-full">
             <div className="h-full rounded-2xl overflow-hidden shadow-lg">
               <img 
-                src="/lovable-uploads/05fd033e-4427-4270-aa11-0a5429ddc42d.png" 
+                src="/uploads/05fd033e-4427-4270-aa11-0a5429ddc42d.png" 
                 alt="Whiteboard planning session with flowchart" 
                 className="w-full h-full object-cover"
               />

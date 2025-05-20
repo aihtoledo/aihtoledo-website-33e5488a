@@ -28,7 +28,7 @@ const WhatAreSection = () => {
                 "h-full min-h-[300px] md:min-h-[400px] bg-cover bg-center rounded-lg shadow-lg scale-x-[-1] transition-all duration-1000 ease-out",
                 isVisible ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"
               )} 
-              style={{ backgroundImage: "url('/lovable-uploads/aihtoledo-hero.jpg')" }}>
+              style={{ backgroundImage: "url('/uploads/aihtoledo-hero.jpg')" }}>
             </div>
           </div>
           
