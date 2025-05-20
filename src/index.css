@@ -115,7 +115,7 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-r from-toledo-blue to-toledo-orange bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-toledo-blue to-pink-700 bg-clip-text text-transparent;
   }
   
   .no-orphans {
@@ -143,15 +143,15 @@
 }
 
 .btn-primary {
-  @apply bg-toledo-blue hover:bg-toledo-blue/90 text-white px-6 py-3 rounded-none transition-all;
+  @apply bg-toledo-blue hover:bg-toledo-blue/90 text-white px-6 py-3 rounded-lg transition-all shadow-md;
 }
 
 .btn-secondary {
-  @apply bg-toledo-orange hover:bg-toledo-orange/90 text-toledo-blue px-6 py-3 rounded-none transition-all;
+  @apply bg-toledo-orange hover:bg-toledo-orange/90 text-toledo-blue px-6 py-3 rounded-lg transition-all shadow-md;
 }
 
 .btn-outline {
-  @apply border-2 border-toledo-blue text-toledo-blue hover:bg-toledo-blue hover:text-white px-6 py-3 rounded-none transition-all;
+  @apply border-2 border-toledo-blue text-toledo-blue hover:bg-toledo-blue hover:text-white px-6 py-3 rounded-lg transition-all shadow-md;
 }
 
 .section-heading {
