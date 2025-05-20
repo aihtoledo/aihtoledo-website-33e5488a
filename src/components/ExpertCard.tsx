@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { ArrowRight, Linkedin, ExternalLink } from "lucide-react";
+import { ArrowRight, Linkedin, ExternalLink, Calendar, MessageSquare } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 interface ExpertCardProps {
@@ -28,31 +28,41 @@ const ExpertCard = ({
   className 
 }: ExpertCardProps) => {
   const isMobile = useIsMobile();
+  const firstName = name.split(' ')[0];
 
   return (
-    <div className={cn("flex flex-col bg-white shadow-lg p-6 border-t-4 border-toledo-orange", className)}>
-      <div className="flex flex-col gap-6">
-        <div className="flex flex-col items-center">
-          <div className="w-32 h-32 rounded-full overflow-hidden shrink-0 mb-3">
-            <img 
-              src={image} 
-              alt={`Photo of ${name}`} 
-              className="w-full h-full object-cover"
-            />
+    <div className={cn(
+      "group relative bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col h-full",
+      "border border-gray-100 hover:border-toledo-orange/20",
+      className
+    )}>
+      <div className="relative z-10 flex flex-col h-full p-6">
+        {/* Expert header with image and basic info */}
+        <div className="flex flex-col items-center text-center mb-6">
+          <div className="relative mb-4 group-hover:scale-105 transition-transform duration-300">
+            <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg group-hover:border-toledo-orange/30 transition-colors duration-300">
+              <img 
+                src={image} 
+                alt={`Photo of ${name}`} 
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
-          <h3 className="text-xl font-bold text-toledo-blue mb-1 text-center">{name} <span className="text-sm font-normal text-toledo-grey">({pronouns})</span></h3>
-          <div className="flex flex-wrap gap-3 mb-3 justify-center">
+          
+          <h3 className="text-2xl font-bold text-toledo-blue mb-1">{name}</h3>
+          <div className="text-sm text-toledo-grey/80 mb-6">{pronouns}</div>
+          
+          {/* Social links */}
+          <div className="flex gap-3 mb-6">
             {linkedInLink && (
               <a 
                 href={linkedInLink} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-sm text-toledo-blue hover:text-toledo-orange transition-colors flex items-center gap-1"
+                className="p-2 rounded-full bg-gray-100 text-toledo-blue hover:bg-toledo-blue hover:text-white transition-colors duration-200"
+                aria-label={`${name}'s LinkedIn profile`}
               >
-                <span className="flex items-center justify-center bg-toledo-blue rounded-full p-1">
-                  <Linkedin className="w-3 h-3 text-white" />
-                </span>
-                LinkedIn
+                <Linkedin className="w-5 h-5" />
               </a>
             )}
             {personalSiteLink && (
@@ -60,41 +70,51 @@ const ExpertCard = ({
                 href={personalSiteLink} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-sm text-toledo-blue hover:text-toledo-orange transition-colors flex items-center gap-1"
+                className="p-2 rounded-full bg-gray-100 text-toledo-blue hover:bg-toledo-blue hover:text-white transition-colors duration-200"
+                aria-label={`${name}'s personal website`}
               >
-                <span className="flex items-center justify-center bg-toledo-blue rounded-full p-1">
-                  <ExternalLink className="w-3 h-3 text-white" />
-                </span>
-                Website
+                <ExternalLink className="w-5 h-5" />
               </a>
             )}
           </div>
         </div>
         
-        {/* Button moved above the bio */}
-        <div className="pb-4 border-b border-gray-100">
-          <Button 
-            className="bg-toledo-orange hover:bg-toledo-orange/90 text-white w-full"
-            onClick={() => window.open(bookingLink, '_blank')}
-          >
-            Book with {name.split(' ')[0]}
-            <ArrowRight className="w-4 h-4 ml-2" />
-          </Button>
-        </div>
-
-        <div>
-          {services && services.length > 0 && (
-            <div className="mb-3">
-              <ul className="list-disc pl-5 text-sm text-toledo-grey">
-                {services.map((service, index) => (
-                  <li key={index} className="font-bold">{service}</li>
-                ))}
-              </ul>
+        {/* Services */}
+        {services && services.length > 0 && (
+          <div className="mb-6">
+            <h4 className="text-sm font-semibold text-toledo-grey/80 uppercase tracking-wider mb-3 flex items-center">
+              <MessageSquare className="w-4 h-4 mr-2 text-toledo-orange" />
+              Expert In
+            </h4>
+            <div className="flex flex-wrap gap-2">
+              {services.map((service, index) => (
+                <span 
+                  key={index} 
+                  className="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-medium bg-toledo-orange/10 text-toledo-orange border border-toledo-orange/20"
+                >
+                  {service}
+                </span>
+              ))}
             </div>
-          )}
-          
-          <p className="text-toledo-grey text-sm text-justify hyphens-auto no-orphans">{bio}</p>
+          </div>
+        )}
+        
+        {/* Bio */}
+        <div className="mb-6 flex-grow">
+          <p className="text-toledo-grey text-justify hyphens-auto no-orphans">
+            {bio.length > 200 ? `${bio.substring(0, 200)}...` : bio}
+          </p>
         </div>
+        
+        {/* CTA Button */}
+        <Button 
+          className="w-full py-6 bg-gradient-to-r from-toledo-blue to-toledo-orange hover:from-toledo-blue/90 hover:to-toledo-orange/90 text-white font-medium rounded-xl shadow-md hover:shadow-lg transition-all duration-300 group-hover:scale-[1.02] flex items-center justify-center gap-2"
+          onClick={() => window.open(bookingLink, '_blank')}
+        >
+          <Calendar className="w-5 h-5" />
+          Book with {firstName}
+          <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+        </Button>
       </div>
     </div>
   );

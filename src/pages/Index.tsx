@@ -7,7 +7,7 @@ import WhatWeHelpSection from "@/components/sections/WhatWeHelpSection";
 import WhoItIsForSection from "@/components/sections/WhoItIsForSection";
 import HowItWorksSection from "@/components/sections/HowItWorksSection";
 import CTASection from "@/components/sections/CTASection";
-import FooterSection from "@/components/sections/FooterSection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -20,7 +20,7 @@ const Index = () => {
       <WhoItIsForSection />
       <HowItWorksSection />
       <CTASection />
-      <FooterSection />
+      <Footer />
     </div>
   );
 };

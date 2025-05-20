@@ -1,26 +1,29 @@
 
 import ExpertCard from "@/components/ExpertCard";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
+import { Users, MessageSquare, ArrowRight } from "lucide-react";
 
 const MeetExpertsSection = () => {
   return (
-    <section id="meet-the-experts" className="py-6 bg-toledo-light">
-      <div className="section-container">
+    <section id="meet-the-experts" className="relative py-16 md:py-24 overflow-hidden bg-gray-50">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimateOnScroll>
-          <div className="text-center mb-10">
-            <div className="text-toledo-orange font-medium text-xl mb-4">
-              👋 Meet The Experts
-            </div>
-            <h2 className="section-heading">
-              Book a session with our experienced professionals
+          <div className="text-center max-w-4xl mx-auto mb-12">
+            <span className="inline-flex items-center px-4 py-2 rounded-full bg-toledo-orange/10 text-toledo-orange text-sm font-medium mb-4">
+              <Users className="w-4 h-4 mr-2" />
+              Meet Our Experts
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-toledo-blue mb-4 leading-tight">
+              Meet Our <span className="text-toledo-orange">Consulting</span> Team
             </h2>
-            <p className="text-lg text-toledo-grey max-w-3xl mx-auto mb-8">
-              Our experts bring years of experience and specialized knowledge to help you tackle challenges and achieve your goals.
+            <p className="text-lg text-toledo-grey/90 max-w-2xl mx-auto">
+              Our Toledo-based consultants bring years of local business expertise to help your company thrive. We understand the unique challenges and opportunities in the Northwest Ohio market.
             </p>
           </div>
         </AnimateOnScroll>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {/* Experts Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <AnimateOnScroll delay={100}>
             <ExpertCard 
               name="Justin Beaudry" 
@@ -34,6 +37,7 @@ const MeetExpertsSection = () => {
                 "Data Infrastructure Design",
                 "AI Adoption"
               ]}
+              className="h-full"
             />
           </AnimateOnScroll>
 
@@ -50,6 +54,7 @@ const MeetExpertsSection = () => {
                 "Tech Hub Architecture",
                 "Tech Community Engagement"
               ]}
+              className="h-full"
             />
           </AnimateOnScroll>
 
@@ -66,6 +71,7 @@ const MeetExpertsSection = () => {
                 "Strategic Planning",
                 "Presentation Design and Delivery"
               ]}
+              className="h-full"
             />
           </AnimateOnScroll>
         </div>

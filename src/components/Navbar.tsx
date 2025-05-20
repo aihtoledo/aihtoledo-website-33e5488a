@@ -10,8 +10,10 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#" className="flex items-center">
-              <span className="text-2xl font-bold text-toledo-blue">Expert Office Hours</span>
+            <a href="/" className="flex items-center">
+              <span className="text-2xl font-bold text-toledo-blue">
+                <span className="text-toledo-orange">AIH</span> Toledo
+              </span>
             </a>
           </div>
           
@@ -63,7 +65,9 @@ const Navbar = () => {
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
                 <div>
-                  <span className="text-xl font-bold text-toledo-blue">Expert Office Hours</span>
+                  <span className="text-xl font-bold text-toledo-blue">
+                  <span className="text-toledo-orange">AIH</span> Toledo
+                </span>
                 </div>
                 <div className="-mr-2">
                   <button
