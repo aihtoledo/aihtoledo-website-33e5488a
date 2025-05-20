@@ -6,13 +6,13 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white z-50 shadow-sm">
+    <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="/" className="flex items-center">
-              <span className="text-2xl font-bold text-toledo-blue">
-                <span className="text-toledo-orange">AIH</span> Toledo
+              <span className="text-2xl font-bold text-toledo-teal">
+                <span className="text-toledo-coral">AIH</span> Toledo
               </span>
             </a>
           </div>
@@ -31,19 +31,19 @@ const Navbar = () => {
           </div>
           
           <nav className="hidden md:flex space-x-10">
-            <a href="#meet-the-experts" className="text-base font-medium text-gray-700 hover:text-toledo-blue">
+            <a href="#meet-the-experts" className="text-base font-medium text-toledo-teal/90 hover:text-toledo-coral transition-colors">
               Meet The Experts
             </a>
-            <a href="#what-are" className="text-base font-medium text-gray-700 hover:text-toledo-blue">
+            <a href="#what-are" className="text-base font-medium text-toledo-teal/90 hover:text-toledo-coral transition-colors">
               About
             </a>
-            <a href="#what-we-help" className="text-base font-medium text-gray-700 hover:text-toledo-blue">
+            <a href="#what-we-help" className="text-base font-medium text-toledo-teal/90 hover:text-toledo-coral transition-colors">
               Services
             </a>
-            <a href="#how-it-works" className="text-base font-medium text-gray-700 hover:text-toledo-blue">
+            <a href="#how-it-works" className="text-base font-medium text-toledo-teal/90 hover:text-toledo-coral transition-colors">
               How It Works
             </a>
-            <a href="#who-its-for" className="text-base font-medium text-gray-700 hover:text-toledo-blue">
+            <a href="#who-its-for" className="text-base font-medium text-toledo-teal/90 hover:text-toledo-coral transition-colors">
               Who It's For
             </a>
           </nav>
@@ -65,14 +65,14 @@ const Navbar = () => {
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
                 <div>
-                  <span className="text-xl font-bold text-toledo-blue">
-                  <span className="text-toledo-orange">AIH</span> Toledo
+                  <span className="text-xl font-bold text-toledo-teal">
+                  <span className="text-toledo-coral">AIH</span> Toledo
                 </span>
                 </div>
                 <div className="-mr-2">
                   <button
                     type="button"
-                    className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100"
+                    className="bg-white rounded-md p-2 inline-flex items-center justify-center text-toledo-teal/80 hover:text-toledo-coral hover:bg-toledo-teal/5"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <span className="sr-only">Close menu</span>
@@ -84,20 +84,20 @@ const Navbar = () => {
               </div>
               <div className="mt-6">
                 <nav className="grid gap-y-8">
-                  <a href="#meet-the-experts" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" onClick={() => setIsMenuOpen(false)}>
-                    <span className="text-base font-medium text-gray-900">Meet The Experts</span>
+                  <a href="#meet-the-experts" className="-m-3 p-3 flex items-center rounded-md hover:bg-toledo-teal/5 transition-colors" onClick={() => setIsMenuOpen(false)}>
+                    <span className="text-base font-medium text-toledo-teal/90 hover:text-toledo-coral">Meet The Experts</span>
                   </a>
-                  <a href="#what-are" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" onClick={() => setIsMenuOpen(false)}>
-                    <span className="text-base font-medium text-gray-900">About</span>
+                  <a href="#what-are" className="-m-3 p-3 flex items-center rounded-md hover:bg-toledo-teal/5 transition-colors" onClick={() => setIsMenuOpen(false)}>
+                    <span className="text-base font-medium text-toledo-teal/90 hover:text-toledo-coral">About</span>
                   </a>
-                  <a href="#what-we-help" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" onClick={() => setIsMenuOpen(false)}>
-                    <span className="text-base font-medium text-gray-900">Services</span>
+                  <a href="#what-we-help" className="-m-3 p-3 flex items-center rounded-md hover:bg-toledo-teal/5 transition-colors" onClick={() => setIsMenuOpen(false)}>
+                    <span className="text-base font-medium text-toledo-teal/90 hover:text-toledo-coral">Services</span>
                   </a>
-                  <a href="#how-it-works" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" onClick={() => setIsMenuOpen(false)}>
-                    <span className="text-base font-medium text-gray-900">How It Works</span>
+                  <a href="#how-it-works" className="-m-3 p-3 flex items-center rounded-md hover:bg-toledo-teal/5 transition-colors" onClick={() => setIsMenuOpen(false)}>
+                    <span className="text-base font-medium text-toledo-teal/90 hover:text-toledo-coral">How It Works</span>
                   </a>
-                  <a href="#who-its-for" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" onClick={() => setIsMenuOpen(false)}>
-                    <span className="text-base font-medium text-gray-900">Who It's For</span>
+                  <a href="#who-its-for" className="-m-3 p-3 flex items-center rounded-md hover:bg-toledo-teal/5 transition-colors" onClick={() => setIsMenuOpen(false)}>
+                    <span className="text-base font-medium text-toledo-teal/90 hover:text-toledo-coral">Who It's For</span>
                   </a>
                 </nav>
               </div>
@@ -105,7 +105,7 @@ const Navbar = () => {
             <div className="py-6 px-5 space-y-6">
               <div>
                 <a href="#meet-the-experts" onClick={() => setIsMenuOpen(false)}>
-                  <Button className="w-full bg-toledo-blue hover:bg-toledo-blue/90 text-white">
+                  <Button className="w-full bg-toledo-coral hover:bg-toledo-coral/90 text-white shadow-md hover:shadow-lg transition-all">
                     Book a Session
                   </Button>
                 </a>

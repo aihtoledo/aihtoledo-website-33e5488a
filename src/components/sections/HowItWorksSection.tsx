@@ -4,11 +4,11 @@ import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 const HowItWorksSection = () => {
   return (
-    <section id="how-it-works" className="py-20 bg-toledo-light">
+    <section id="how-it-works" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimateOnScroll>
           <div className="text-center mb-16">
-            <div className="text-toledo-orange font-medium text-xl mb-4">
+            <div className="text-toledo-coral font-medium text-xl mb-4">
               💬 How It Works
             </div>
             <h2 className="section-heading">

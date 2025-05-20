@@ -36,7 +36,7 @@ const WhatAreSection = () => {
           <div className="md:w-1/2">
             <AnimateOnScroll>
               <div className="h-full flex flex-col justify-center">
-                <div className="text-toledo-orange font-medium text-xl mb-4">
+                <div className="text-toledo-coral font-medium text-xl mb-4">
                   👋 What Are Expert Office Hours?
                 </div>
                 <h2 className="section-heading">

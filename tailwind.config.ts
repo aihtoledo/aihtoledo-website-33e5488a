@@ -1,5 +1,6 @@
 
 import type { Config } from "tailwindcss";
+import animate from "tailwindcss-animate";
 
 export default {
 	darkMode: ["class"],
@@ -64,28 +65,28 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				// Modern professional color palette
-				"toledo-blue": "#2563EB", // More vibrant, professional blue
-				"toledo-gold": "#F59E0B", // Warmer, more subtle gold
-				"toledo-orange": "#F97316", // Warmer orange
+				"toledo-peach": "#FFCAB1", // Light Peach - primary accent
+				"toledo-teal": "#69A2B0", // Muted Teal - secondary color
+				"toledo-sage": "#659157", // Sage Green - primary action
+				"toledo-light-sage": "#A1C084", // Light Sage - secondary action
+				"toledo-coral": "#E05263", // Coral Red - call to action
+				// Additional colors for gradients and accents
+				"toledo-blue": {
+					50: "#f0f9ff",
+					100: "#e0f2fe",
+					200: "#bae6fd",
+					300: "#7dd3fc",
+					400: "#38bdf8",
+					500: "#0ea5e9",
+					600: "#0284c7",
+					700: "#0369a1",
+					800: "#075985",
+					900: "#0c4a6e"
+				},
 				"toledo-grey": "#475569", // Slate gray - professional
 				"toledo-light": "#F8FAFC", // Very light background
-				// Additional colors for gradients and accents
-				"eoh-blue": {
-					50: "#eff6ff",
-					100: "#dbeafe",
-					200: "#bfdbfe",
-					300: "#93c5fd",
-					400: "#60a5fa",
-					500: "#3b82f6",
-					600: "#2563eb",
-					700: "#1d4ed8",
-					800: "#1e40af",
-					900: "#1e3a8a"
-				},
-				"pink": {
-					600: "#DB2777",
-					700: "#BE185D",
-				}
+				// Legacy colors for backward compatibility
+				"toledo-orange": "#F97316"
 			},
 			fontFamily: {
 				sans: ['Inter var', 'Inter', 'system-ui', 'sans-serif'],
@@ -131,5 +132,5 @@ export default {
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [animate],
 } satisfies Config;

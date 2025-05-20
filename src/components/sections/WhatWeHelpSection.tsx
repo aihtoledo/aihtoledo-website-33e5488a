@@ -4,11 +4,11 @@ import { BookOpen, Brain, Presentation, Layout, Network, Users, Database, Rocket
 
 const WhatWeHelpSection = () => {
   return (
-    <section id="what-we-help" className="py-20 bg-toledo-light">
+    <section id="what-we-help" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimateOnScroll>
           <div className="text-center mb-16">
-            <div className="text-toledo-orange font-medium text-xl mb-4">
+            <div className="text-toledo-coral font-medium text-xl mb-4">
               🧠 What We Help With
             </div>
             <h2 className="section-heading">

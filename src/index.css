@@ -97,7 +97,7 @@
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-heading font-bold text-toledo-blue tracking-tight;
+    @apply font-heading font-bold text-toledo-teal tracking-tight;
   }
 
   p {
@@ -119,7 +119,7 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-r from-toledo-blue to-pink-700 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-toledo-teal to-toledo-coral bg-clip-text text-transparent;
   }
   
   .no-orphans {
@@ -140,7 +140,7 @@
 }
 
 .feature-icon {
-  @apply flex h-12 w-12 items-center justify-center text-toledo-blue mb-4;
+  @apply flex h-12 w-12 items-center justify-center text-toledo-teal mb-4;
 }
 
 .animate-on-scroll {
@@ -155,19 +155,19 @@
 }
 
 .btn-primary {
-  @apply bg-toledo-blue hover:bg-toledo-blue/90 text-white px-6 py-3 rounded-xl transition-all shadow-md hover:shadow-lg;
+  @apply bg-toledo-coral hover:bg-toledo-coral/90 text-white px-6 py-3 rounded-xl transition-all shadow-md hover:shadow-lg;
 }
 
 .btn-secondary {
-  @apply bg-toledo-orange hover:bg-toledo-orange/90 text-white px-6 py-3 rounded-xl transition-all shadow-md hover:shadow-lg;
+  @apply bg-toledo-teal hover:bg-toledo-teal/90 text-white px-6 py-3 rounded-xl transition-all shadow-md hover:shadow-lg;
 }
 
 .btn-outline {
-  @apply border-2 border-toledo-blue text-toledo-blue hover:bg-toledo-blue hover:text-white px-6 py-3 rounded-xl transition-all shadow-md hover:shadow-lg;
+  @apply border-2 border-toledo-teal text-toledo-teal hover:bg-toledo-teal hover:text-white px-6 py-3 rounded-xl transition-all shadow-md hover:shadow-lg;
 }
 
 .section-heading {
-  @apply text-3xl md:text-4xl font-bold mb-8 text-toledo-blue no-orphans tracking-tight;
+  @apply text-3xl md:text-4xl font-bold mb-8 text-toledo-teal no-orphans tracking-tight;
 }
 
 .section-subheading {
@@ -175,11 +175,11 @@
 }
 
 /* Fix for CTA section image height */
-.bg-toledo-orange .grid {
+.bg-toledo-coral .grid {
   min-height: 400px;
 }
 
-.bg-toledo-orange .h-full img {
+.bg-toledo-coral .h-full img {
   height: 100%;
   object-fit: cover;
   min-height: 400px;

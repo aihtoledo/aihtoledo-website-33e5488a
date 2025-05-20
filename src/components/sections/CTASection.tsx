@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 const CTASection = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-toledo-orange to-pink-600 text-white">
+    <section className="py-20 bg-gradient-to-br from-toledo-teal to-toledo-coral text-white">
       <div className="section-container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch h-full">
           <AnimateOnScroll>
@@ -17,7 +17,7 @@ const CTASection = () => {
                 This isn't a webinar. It's not a course. It's not another "coffee chat." It's expert time, dedicated to your challenge—designed to move you forward.
               </p>
               <a href="#meet-the-experts">
-                <Button variant="default" size="lg" className="bg-white text-toledo-orange hover:bg-white/90 text-lg px-10 py-6 rounded-full shadow-lg hover:shadow-xl">
+                <Button variant="default" size="lg" className="bg-white text-toledo-coral hover:bg-white/90 text-lg px-10 py-6 rounded-full shadow-lg hover:shadow-xl">
                   Book Your Session Now
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>

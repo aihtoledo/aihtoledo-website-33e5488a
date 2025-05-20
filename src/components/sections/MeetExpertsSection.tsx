@@ -5,16 +5,16 @@ import { Users, MessageSquare, ArrowRight } from "lucide-react";
 
 const MeetExpertsSection = () => {
   return (
-    <section id="meet-the-experts" className="relative py-16 md:py-24 overflow-hidden bg-gray-50">
+    <section id="meet-the-experts" className="relative py-16 md:py-24 overflow-hidden bg-white">
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimateOnScroll>
           <div className="text-center max-w-4xl mx-auto mb-12">
-            <span className="inline-flex items-center px-4 py-2 rounded-full bg-toledo-orange/10 text-toledo-orange text-sm font-medium mb-4">
+            <span className="inline-flex items-center px-4 py-2 rounded-full bg-toledo-coral/10 text-toledo-coral text-sm font-medium mb-4">
               <Users className="w-4 h-4 mr-2" />
               Meet Our Experts
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-toledo-blue mb-4 leading-tight">
-              Meet Our <span className="text-toledo-orange">Consulting</span> Team
+            <h2 className="text-3xl md:text-4xl font-bold text-toledo-teal mb-4 leading-tight">
+              Meet Our <span className="text-toledo-coral">Consulting</span> Team
             </h2>
             <p className="text-lg text-toledo-grey/90 max-w-2xl mx-auto">
               Our Toledo-based consultants bring years of local business expertise to help your company thrive. We understand the unique challenges and opportunities in the Northwest Ohio market.
