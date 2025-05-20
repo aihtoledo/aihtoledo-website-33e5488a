@@ -10,7 +10,7 @@ const FooterSection = () => {
             <h3 className="text-2xl font-bold text-white">Expert Office Hours</h3>
             <p className="mt-2 text-white/80">Professional support when you need it most.</p>
           </div>
-          <div className="flex space-x-10">
+          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-10">
             <a href="#" className="hover:text-toledo-gold transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-toledo-gold transition-colors">Terms of Service</a>
             <a href="#" className="hover:text-toledo-gold transition-colors">Contact</a>

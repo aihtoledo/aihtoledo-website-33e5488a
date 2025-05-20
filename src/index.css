@@ -1,11 +1,14 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://rsms.me/inter/inter.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 210 20% 98%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -14,10 +17,10 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 215 100% 34%;
+    --primary: 217 91% 48%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 43 100% 50%;
+    --secondary: 43 100% 55%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
@@ -33,7 +36,7 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 221.2 83.2% 53.3%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -85,15 +88,16 @@
   
   * {
     @apply border-border;
+    scroll-behavior: smooth;
   }
 
   body {
-    @apply bg-background text-foreground;
-    font-feature-settings: "rlig" 1, "calt" 1;
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold text-toledo-blue;
+    @apply font-heading font-bold text-toledo-blue tracking-tight;
   }
 
   p {
@@ -107,9 +111,9 @@
   [class*="CardDescription"] {
     text-align: left !important;
     hyphens: manual !important;
-    text-wrap: normal !important;
+    text-wrap: pretty !important;
     white-space: normal !important;
-    font-size: 1rem !important; /* Ensure consistent font size */
+    font-size: 1rem !important;
   }
 }
 
@@ -120,6 +124,14 @@
   
   .no-orphans {
     text-wrap: balance;
+  }
+  
+  .glass-card {
+    @apply bg-white/90 backdrop-blur-sm border border-white/20 shadow-lg;
+  }
+  
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
   }
 }
 
@@ -143,19 +155,19 @@
 }
 
 .btn-primary {
-  @apply bg-toledo-blue hover:bg-toledo-blue/90 text-white px-6 py-3 rounded-lg transition-all shadow-md;
+  @apply bg-toledo-blue hover:bg-toledo-blue/90 text-white px-6 py-3 rounded-xl transition-all shadow-md hover:shadow-lg;
 }
 
 .btn-secondary {
-  @apply bg-toledo-orange hover:bg-toledo-orange/90 text-toledo-blue px-6 py-3 rounded-lg transition-all shadow-md;
+  @apply bg-toledo-orange hover:bg-toledo-orange/90 text-white px-6 py-3 rounded-xl transition-all shadow-md hover:shadow-lg;
 }
 
 .btn-outline {
-  @apply border-2 border-toledo-blue text-toledo-blue hover:bg-toledo-blue hover:text-white px-6 py-3 rounded-lg transition-all shadow-md;
+  @apply border-2 border-toledo-blue text-toledo-blue hover:bg-toledo-blue hover:text-white px-6 py-3 rounded-xl transition-all shadow-md hover:shadow-lg;
 }
 
 .section-heading {
-  @apply text-3xl md:text-4xl font-bold mb-8 text-toledo-blue no-orphans;
+  @apply text-3xl md:text-4xl font-bold mb-8 text-toledo-blue no-orphans tracking-tight;
 }
 
 .section-subheading {
@@ -171,4 +183,9 @@
   height: 100%;
   object-fit: cover;
   min-height: 400px;
+}
+
+/* Card hover effects */
+.service-card, .expert-card, .audience-card {
+  @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
 }

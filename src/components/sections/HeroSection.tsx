@@ -9,17 +9,17 @@ const HeroSection = () => {
   return (
     <section className="min-h-screen flex items-end justify-center bg-cover bg-center relative" style={{ backgroundImage: "url('/lovable-uploads/aihtoledo-hero.jpg')" }}>
       {/* Dark overlay to increase text contrast */}
-      <div className="absolute inset-0 bg-black/20"></div>
+      <div className="absolute inset-0 bg-black/30 bg-gradient-to-t from-black/60 to-black/10"></div>
       
-      <div className={`w-full ${isMobile ? 'max-w-full' : 'max-w-[50%]'} backdrop-blur-sm bg-white/80 p-8 rounded-t-2xl shadow-xl ${isMobile ? 'mb-0' : 'mb-0'} relative z-10`}>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-6 text-gradient">
+      <div className={`w-full ${isMobile ? 'max-w-full' : 'max-w-[50%]'} glass-card backdrop-blur-md bg-white/70 p-8 md:p-10 rounded-t-3xl shadow-xl ${isMobile ? 'mb-0' : 'mb-0'} relative z-10`}>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-6 text-gradient">
           Expert Office Hours
         </h1>
 
-        <p className="text-xl md:text-2xl font-medium text-center mb-2 text-toledo-blue">
+        <p className="text-xl md:text-2xl font-semibold text-center mb-2 text-toledo-blue">
           Professional support. Strategic clarity.
         </p>
-        <p className="text-xl md:text-2xl font-medium text-center mb-6 text-toledo-blue">
+        <p className="text-xl md:text-2xl font-semibold text-center mb-8 text-toledo-blue">
           Results that matter.
         </p>
 
